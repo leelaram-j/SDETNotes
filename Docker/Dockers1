@@ -1,0 +1,129 @@
+Using mulitple docker cotainers for diff browsers is not an advisible way to run a selenium grid
+
+Instead use Selenium hub and run sub contianers in it for diff browsers..
+
+https://github.com/SeleniumHQ/docker-selenium
+
+check this page, it contains the basic implemetation code for how to create a hub and run diff nodes in it.
+
+$ docker network create grid
+$ docker run -d -p 4444:4444 --net grid --name selenium-hub selenium/hub:3.141.59-xenon
+$ docker run -d --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.141.59-xenon
+$ docker run -d --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59-xenon
+
+# Remove all unused networks
+$ docker network prune
+# OR
+# Removes the grid network
+$ docker network rm grid
+
+above method works as well. But standard method would be to use a yaml file for this as described in the github link.
+
+# To execute this docker-compose yml file use `docker-compose -f <file_name> up`
+# Add the `-d` flag at the end for detached execution
+version: "3"
+services:
+  selenium-hub:
+    image: selenium/hub:3.141.59-xenon
+    container_name: selenium-hub
+    ports:
+      - "4444:4444"
+  chrome:
+    image: selenium/node-chrome:3.141.59-xenon
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+  firefox:
+    image: selenium/node-firefox:3.141.59-xenon
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+
+The above file will create a docker selenium hub with firefox and chrome node images.
+
+
+One more way would be to use link, but this is a legcy feature
+
+$ docker run -d -p 4444:4444 --name selenium-hub selenium/hub:3.141.59-xenon
+$ docker run -d --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-chrome:3.141.59-xenon
+$ docker run -d --link selenium-hub:hub -v /dev/shm:/dev/shm selenium/node-firefox:3.141.59-xenon
+
+
+
+docker-compose -f <file_name> up
+this command creates a container, with the nodes specified in the yaml file.
+
+
+
+http://localhost:4444/grid/console/
+
+this command is used to check the list of nodes in the grid.
+
+suppose we need to increase the number of chrome nodes or any other node use the below command:
+
+docker-compose scale chrome=5
+
+
+Remember the process can be automated:
+
+The process of starting the docker and the hub....
+
+In windows: it can be done via .bat file
+put the code in there to locate the yaml file and run the docker compose command
+
+
+In linux or mac
+you can use a bash script to do the same exactly.
+
+
+docker-compose -f docker-compose.yaml up --scale chrome=5
+
+this will start the hub and scale the mentioned service.
+
+
+triggering the bash/bat script from script
+
+
+windows:
+runtime.exec("cmd /c start C:\\location");
+
+mac/linux:
+
+Process p = new ProcessBuilder("./docker_start.sh").start();
+        p.waitFor(10,TimeUnit.SECONDS);
+
+
+String cmd="./docker_start.sh";
+        Process p = Runtime.getRuntime().exec(cmd);
+        p.waitFor(10,TimeUnit.SECONDS);
+
+Both method works, use method 2 if you need to invoke multiple scripts        
+
+
+
+
+docker-compose -f docker-compose.yaml up --scale chrome=5 >>output.txt
+
+docker-compose up --scale chrome=5 >>output.txt
+For the above to work there should be a yaml file present in the current directory
+
+
+
+docker rm $(docker ps -a -q) --> removes all containers
+
+docker container ps -a -q  --> lists all contianers
+
+docker images ls
+
+
+
+
+

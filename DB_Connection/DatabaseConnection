@@ -1,0 +1,93 @@
+curdate() --> this will return the current date
+
+ <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.16</version>
+    </dependency>
+
+The above dependency is used to import mysql connection into pom.xml or import the jar to do the same.
+
+Sample code:
+
+Class.forName("com.mysql.cj.jdbc.Driver");  // here the specified class is called from the downloaded jar
+
+
+class.forName() --> will load any class to load it dynamically.
+
+Connection conn =null;
+conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Business","root","Samsung@123");
+Statement st = conn.createStatement();
+ResultSet rs = st.executeQuery("select * from CustomerInfo where Location='Asia';");
+    while(rs.next())
+        {
+            System.out.print(rs.getString(1)+",");
+            System.out.print(rs.getString(2)+",");
+            System.out.print(rs.getInt(3)+",");
+            System.out.print(rs.getString(4)+"\n");
+        }
+conn.close();
+
+
+Also the above code will throw ClassNotFoundException and SQLException
+
+jdbc:mysql://localhost:3306/Business --> Connection String
+
+here rs.getString(1) --> 1 refers to the column number
+
+
+above code will fetch all teh resuts of the executed query
+
+Converting the query result to Java Object and converting the javaObject is converted to Json
+
+for this we need to create a class with required variables and use POJO implmentation and apply getters and setters
+
+Getters and Setters
+
+use jackson api to convert java objects to json and vice versa...see code for implementation
+
+ObjectMapper om = new ObjectMapper();
+om.writeValue(new File("//Users//lee//Documents//DB_connection//firstRow.json"),cd);
+
+this willconver the java object cd, to json file....
+
+Also note that it can be converted as a string and the same can be used...as it is done in nanourl code
+
+ObjectMapper objectMapper = new ObjectMapper();
+String requestBody = null;
+try {
+      requestBody = objectMapper.writeValueAsString(nanoUrlRequest);
+    } 
+    catch (JsonProcessingException e)
+    {
+      e.printStackTrace();
+    }
+
+
+Here instead of a file, it is converted to a string. The above will work if there is only 1 json string
+
+Incase of multiple jsonStrings
+
+Add Gson dependency to maven
+
+Using Gson u can convert a java object to string and then use JSONArray to convert the list of strings  and then pass the same to JSONObject
+
+here \ will come in the json string, as this string involves lot of "", before which a \ will be there...So in order to avoid it we use apache common text api to fix this issue
+
+Gson is used to convert java object to json this will be helpful in the case of multiple json into a single one....for other scenario you can just use Object mapper
+as well to convert the java object to json.
+
+For using mulitple json into one, use JSONArray and use the same in JSONOBject. refer code 
+
+String escape utils will help you to sort out the \ issue in json string that is created. and the created new string will have an extra " before and after {}
+so in order to avoid it use string.replace(ols,new)
+
+this simple fix will sort out the issue.
+
+
+
+ObjectMapper om = new ObjectMapper();
+om.readValue();
+
+this is used to convert json to java object.
+

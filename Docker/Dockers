@@ -1,0 +1,84 @@
+Dockers:
+
+a software that is installed on an OS:
+
+it helps us to create containers(Virtual machine concept), with less resources.
+
+this is ideally used in automation to run selenium grid concept
+
+grid concept:
+
+suppose 2 have 100 test cases and each test case takes a min to execute. in this case it will take 100 mins to execute all the cases
+
+but if we have 3 VM's then it would take only 33 mins to run all test cases as the cases are run parallely.
+
+equally split between them all
+
+
+Docker concept:
+
+one single os
+
+container a:
+os+chrome
+
+container b:
+os+firefox
+
+docker is a containerization platform, you can build your application, package them alone with their dependencies into a container and then these containers can be easlily shipped to run other applocations.
+
+What is a container and image?
+
+An image is a light weight standalone executable piece of software that includes evrything needed to run an application code,runtime,system tools,system settings and libraries.
+
+container is the runtime instance of the image
+
+Image components:
+
+Selenium jars
+java
+Chrome
+
+Docker file:
+instructions to build a docker image.
+
+Difference between Containers and Virtual Machines?
+
+Virtualization-technique of installing guest os on host os
+
+Containerzation is however more efficient because there is no guest os, reosurce share and utlizes a host's OS. And it will share the relevant libraries and resources 
+as when needed unlike virtual machines. THis will be more efficient. Light weight and faster.
+
+Containers are smalled thant eh virtaul machines and enable faster startup with better performance, less isolation nd greater compatibility due to sharing of the host's
+kernel.
+
+Docker hub--
+
+it is like a repository collection of images, u can download and deploy the same in your container.
+
+https://github.com/SeleniumHQ/docker-selenium
+
+docker --version
+
+docker ps--if any continers running...
+
+
+docker pull selenium/standalone-chrome:latest
+
+if we need to mention the  version we need to give : after chrome
+
+
+docker images ---> this will list the number of images that are availble in the docker locally
+
+docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:latest
+
+-d ---> this is to deploy the image
+-p ---> port number, we must direct our tests to run on this port.
+/dev/shm:/dev/shm --> this is done so that chrome doesnt crashes and it uses the RAM memory
+selenium/standalone-chrome:latest -->image name and version
+
+docker stop container_id ---> this will stop the container.
+
+
+docker run -d -p 4445:4445 -v /dev/shm:/dev/shm selenium/standalone-firefox:latest
+starting anothe containere in another port
