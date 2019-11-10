@@ -1,0 +1,59 @@
+Jenkins Pipeline:
+
+A pipeline is a collection of jobs that brings the software frm version control into the hands of end users by using 
+automation tools.
+
+It is a workflow used to achieve continuous delivery in software developement process.
+
+Jenkins is used for this.
+
+Build
+-mvn install
+
+Deploy
+
+-deploy into server--by using shell scripts
+
+Testing
+
+Release
+-tasks
+
+
+So add this plugin
+
+jenkins Build Pipeline plugin --> this is suitable for small scale applications.
+
+Jenkins pipelines project --> Large scale application with many jobs
+
+the aboce approach used jenkins file
+ 
+jenkins file is a text file that stores the entire workflow as code.
+
+the jenkins file is written using groovy DSL( domain specific language). It is written in 2 syntaxes
+
+1) declarative pipeline syntax
+2) Scripted pipeline syntax
+
+
+
+
+---------
+if using pipeling plugin,
+click on the plus icon next to list of projects in homepage
+
+just integrate the existing process, this will create a pipeline. go to confgure of the job
+
+in build trigger section, click it and add projects to wat section add the previous project that needs to built before running this.....
+
+so on keep adding the the projects. and build the pipeline.
+
+---------
+if using the pipeline script, you can either write the script or import it from SCM, .jenkinsfile...
+
+check
+git@github.com:uniformfoxtrot/SDET-Docker-SeleniumHub-JenkinsPipeline.git
+
+this for the file.
+
+Facing issue with this file, have asked for doubts. Follow up to get them clarified...
