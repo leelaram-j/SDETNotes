@@ -1,0 +1,41 @@
+Git :
+
+git init
+
+git clone repo-name
+
+
+git stash
+
+git remote add origin repo-name
+
+git pull origin master
+
+git add -A
+
+git add *
+
+git add file-name
+
+git commit -a -m "Commit messgae"
+
+git commit -m "messge"
+
+git push origin master
+
+
+git checkout -b branch_name --> creates new branch and checkout that
+
+git checkout branchname --> switch to exisitng branch
+
+
+git branch --> to list all branches
+
+git merge branch_name --> merge specified branch with your current branch
+
+
+dropp all local changes and commits, fetch the lastest history from server and point ur local to it:
+
+git fetch origin
+
+git reset --hard origin/master
