@@ -1,0 +1,38 @@
+Java Streams,Lambda Expressions for Optimized Code Building:
+
+Streams intro from Java 8
+
+we can perform various aggregate operations on the data retirned from collection classes by drastically reducing the complexity of the code.
+array list etc.
+
+
+Lambda Expression? 
+
+lambda expressions introduce the new arrow operator -> into java. it divides he lambda expression into 2 parts:
+
+the left side specifies the parameter reqired by the experssion, whihc could also be empty if no parameters required.
+the right side is the lamda body whihc specifies the actions of the lambda expression
+
+The working of streams can be defined in 3 stages:
+
+1) Create a Stream
+2) Perform intermediate operations on the iniital stream to transform it into another stream and so on further intermediate operations.
+3) Perform Terminal operation on the final stream to get the result.
+
+An important Characteristic of intermediate operaations is laziness.
+When executing this code snippet, nothing is printed to the console. that is because the intermeditate operations
+will only be executed when a terminal operation is present.
+
+Note:
+the aggregate operation that we perform on the collection, array or any other data source do not change the data of the source, they simply return a new stream.
+
+
+Terminal operations:
+
+count()
+limit()
+sort()
+distinct()
+
+
+Refer the code for mutiple implementtions
