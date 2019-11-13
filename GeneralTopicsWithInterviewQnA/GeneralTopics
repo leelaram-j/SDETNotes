@@ -1,0 +1,59 @@
+4 tier of environments
+
+
+-dev
+-test
+--feature testing
+--regression testing
+-staging(UAT)
+-production
+
+
+components of each env
+
+each server(linux based only)
+--application server(tomcat)
+--configuration
+--separate database
+ --both sql and nosql
+
+
+ common issues:
+
+configuration
+--text files ending with .properties --env specific infor
+-- DB_name
+DB-user
+db-pwd
+ftp server details
+logs location
+encryption keys
+
+
+Database:
+SQL scripts--if these are not run properly it will cause issues
+missing or bad data (occurs if multiple ppl are manipulating the data) 
+
+Server:
+firewall/proxy issuues
+
+Other
+environment not available
+
+Testers Collaboration:
+
+--dev
+--Product/Business Team
+--DevOps 
+
+
+Interview Questions:
+
+how does your typical day at work look like in your last company?
+--project specific tasks and constant collaboration
+
+what test environments do you have?
+--established test env qa/system testing/Regression
+
+Mention few challenges or issue face everyday?
+--env issues, deployment issues, unclear requirements

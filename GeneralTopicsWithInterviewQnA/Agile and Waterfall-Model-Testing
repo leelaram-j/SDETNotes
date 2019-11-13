@@ -1,0 +1,99 @@
+Agile and Waterfall-Model-Testing
+
+Waterfall--traditional model
+
+analysis-design-coding-testing-release
+
+Linear sequential(non interative)
+Easy to understnad and implement
+Customers can see whole product only at the end
+
+
+cons:
+high risk of uncertainity and failure--testing starts at later stage
+cannot handle requirement changes
+
+
+Agile Model:
+
+Iteration1:
+analysis-design-coding-testing-release
+Iteration2:
+analysis-design-coding-testing-release
+Iteration3:
+analysis-design-coding-testing-release
+Iteration4:
+analysis-design-coding-testing-release
+Iteration5:
+analysis-design-coding-testing-release
+
+and so on...
+
+
+features:
+iterative and incremental
+needs lot of collaboration
+customer constantly sees subsets of product
+
+cons that were addressed in agile:
+reduced risk--testing is started at the earlier stage with requirement gathering
+allows chages to requirement
+
+
+Agile testing:
+Foloowing agile model for tesitn
+
+testing isnt a separte phase but contniuous
+shorter execution cycle and provide faster feedback--challenge for a tested
+testing isnt raisng bugs but prevent them--proactive rather than reactive
+
+
+Scrum: execution framework for agile principles
+
+Roles:
+product owner
+Scrum master
+Team(Developser/QA)
+
+artifacts:
+User storied(basic unit of  development in scrum) qa and dev assigned for a particular feature
+tasks--can be created under each user story
+sprint backlog--pipeline of user stories and proritized by PM
+
+Events:
+Sprint(iteration in scrum, 2 weeks usually)
+sprint planning meeting(conducted beginning of sprint)
+Daily Standup meeting
+Sprint review meeting(conducted at the end of the sprint)
+Sprint retrospective meeting( conducted at the end of the sprint)
+
+
+Sprint:
+
+time boxed effort
+an iteration of scrum
+
+estimation
+-check dependiencied
+conside prerequistes
+
+requirements:
+learn and understand requirements
+if any changes na u shoud quickly understand them and changes the test cases and give an estimation
+
+blockers:
+raise flag early on
+
+
+Interview Questions:
+
+prior experince in Agile
+
+Agile testing--helps us to be proactive rather than being reactive
+
+describe the challenges with agile testing?
+Conitnuous, time boxed, shorted test execution cycles, limited documentation
+
+How do you handle requirement changes?
+ work closely with PM and undestand the change
+ for major cahnge u need to argue with PM for a new sprint
