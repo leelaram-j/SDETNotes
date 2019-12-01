@@ -1,0 +1,29 @@
+SQL:
+
+sqlfiddle.com
+online code generation site
+
+
+joins:
+
+inner join  
+right outer join
+left outer join
+full outer join
+
+create table department
+('dept_id' int,'dept_name' varchar(10));
+
+insert into department
+('dept_id','dept_name')
+values
+(10,'IT'),
+(20,'Accounts');
+
+Find the dept name and max salary in rach department
+
+Find the department name, employee count in each depatment with atleast one employee
+
+when using avg or max or any function use group by for other columns. -- aggregate functions
+
+check left join and right join usgae

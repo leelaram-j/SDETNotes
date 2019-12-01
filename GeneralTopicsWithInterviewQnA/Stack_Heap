@@ -1,0 +1,4 @@
+stack vs heap:
+
+stack-- Methods and local variables (both primitive ans reference variables) are stored in stack
+heap-- Objects and instance variables are stored in heap.
