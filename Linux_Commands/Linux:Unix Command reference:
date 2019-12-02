@@ -1,0 +1,175 @@
+Linux/Unix Command reference:
+
+Q. How to connect to a remote server/computer?
+
+ssh(secure shell) is the network protocol to login to a remote server. It provides a secure channel to connect to the remote servers.
+
+COMMAND:
+
+        ssh <username>@<server>
+
+EXAMPLE:
+
+        ssh shaan@ec2-34-230-58-156.compute-1.amazonaws.com
+
+        ssh shaan@34.230.58.156
+
+TOOLS:
+
+         Terminal (for MAC)
+
+         Putty (for Windows)
+
+         Git BASH (Unix BASH emulator, available for both MAC and Windows)
+
+ 
+
+Q. What is the use of find command?
+
+find - search for files in a directory hierarchy
+
+ 
+
+find command help:
+
+$ find –help      
+
+usage: find [-options] [path ...] [expression]
+
+$ man find
+
+usage: find [-options] [path ...] [expression]
+
+
+
+find by name:
+
+$ find /var/log/ -name hibernate.log
+
+/var/log/amazon/ssm/hibernate.log
+
+$ find /var/log/ -name *.log
+
+/var/log/cloud-init-output.log
+
+/var/log/cloud-init.log
+
+/var/log/yum.log
+
+/var/log/boot.log
+
+/var/log/amazon/ssm/hibernate.log
+
+/var/log/dracut.log
+
+find: `/var/log/audit': Permission denied
+
+ 
+
+find by name and exclude any error output:
+
+$ find / -name *.log 2>/dev/null                     2  Standard Error
+
+/var/log/cloud-init-output.log                       >  Redirection
+
+/var/log/cloud-init.log                              /dev/null  Blackhole
+
+/var/log/yum.log
+
+/var/log/boot.log
+
+/var/log/amazon/ssm/hibernate.log
+
+/var/log/dracut.log
+
+                                                                                                                                                                  
+
+find by name and modified timestamp within last 24 hours:
+
+$ find / -mtime 0 -name *.log 2>/dev/null
+
+/var/log/cloud-init-output.log
+
+/var/log/cloud-init.log
+
+/var/log/amazon/ssm/hibernate.log
+
+
+
+Q. How to print the content of file(s)?
+
+cat  - print the whole file(s)
+
+usage: cat [-options] [file ...] [file ...]
+
+head - print the first part of file
+
+usage: head [-options] [file ...]
+
+tail   - print the last part of file
+
+usage: tail [-options] [file ...]
+
+ 
+
+Q. How to monitor the logs in real-time or live?
+
+ tail -f    - output appended data as the file grows
+
+ 
+
+Q. How to view or edit the content of file(s)?                                                        
+
+less   - file viewer                                   
+
+usage: less [-options] [file ...]                                                                            
+
+navigation keys:
+
+ctrl + f        – forward one screen
+
+ctrl + b       – backward one screen
+
+g                - go to top of file
+
+shift + g     - go to end of file
+
+q                - exit
+
+search keys:
+
+/        - forward search
+
+?       - backward search       
+
+n       - next match                                                            
+
+                                                              
+
+nano - file editor
+
+usage: nano [-options] [file ...]
+
+navigation keys:
+
+ctrl + v       - forward one screen
+
+ctrl + y       - backward one screen
+
+alt + \         - go to top of file
+
+alt + /         - go to end of file
+
+ctrl + x       - exit from nano
+
+search keys:
+
+ctrl + w      - forward search
+
+alt + b        - backward search
+
+alt + w       - next match
+
+save key:
+
+ctrl + o       - save changes
