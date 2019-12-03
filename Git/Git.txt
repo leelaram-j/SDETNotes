@@ -4,6 +4,7 @@ git init
 
 git clone repo-name
 
+git remote -v --> this will return the push and pull url's
 
 git stash
 
@@ -38,4 +39,26 @@ dropp all local changes and commits, fetch the lastest history from server and p
 
 git fetch origin
 
-git reset --hard origin/master 
+git reset --hard origin/master  
+
+adding a new branch from local to central repo
+
+git push -u origin JIRA_456
+
+HEAD:
+
+Workflow:
+
+git fetch -- will just fetch the data into local repo...will not merge it in the workspace
+git merge -- will merge the changes into workspace from local repo
+
+git log --keeps trackof commits
+
+
+git stash
+
+git stash list --> this will list the currently stashed changes
+
+git stash pop --> this will pop the last stash that is done
+
+git stash apply stash@{2} --> will pop the particular stash commit alone.
