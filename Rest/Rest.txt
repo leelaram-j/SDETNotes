@@ -1,0 +1,84 @@
+Rest Services:
+
+Representational State transfer
+
+Tools used rest assured
+postman
+curl
+
+-- Web resources/services are represented using a uniform URL.
+--Requests
+ -Get(read an existing resource)
+ -Post (insert new resource)
+ -Put(update an existing resource)
+ -Delete(delete an existing resource)
+
+ Restidempotent(GEt,put,delete) and non idempotent (post) methods
+ idempotent- means call same resource multiple times without damage
+
+ Response:
+
+ HTML
+ xml
+ json
+
+
+ Tools:
+ 
+ Manual
+
+ curl command
+ tool-postman
+
+ automation
+
+ class library( rest assured)
+ 	easy integration with existing framework and customization
+
+ tool-Jmeter
+ 	Faster automation.
+
+
+Http:
+
+http request and response headers
+
+	-content-type
+	Accept
+	Authorization
+	Content-Length
+	wiki--http header fiedlds
+
+http response code:
+
+2xx --succesful
+4xx --Client error
+5xx --server error
+
+Sample webservices for practise
+http://dummy.restapiexample.com/
+
+
+DSL SYNTAX:
+
+domain specific language.
+
+given()
+when()
+then()	
+
+
+From interview stand point please read http request headers and response headers
+http response status code
+
+diff headers
+request
+authorization
+content-type
+cookie
+
+
+4xx client errors, rest errors
+5xx server errors
+reponse
+content-tyoe
