@@ -1,0 +1,257 @@
+[1575480885.540][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "platformName": "any"
+      },
+      "firstMatch": [ {
+
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[1575480885.547][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1575480885.547][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1575480885.552][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension=/var/folders/lw/0z_61hj17ls1zd8c5z8xlk880000gn/T/.org.chromium.Chromium.TYrK6M/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/lw/0z_61hj17ls1zd8c5z8xlk880000gn/T/.org.chromium.Chromium.c9CfSO data:,
+[1575480887.528][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1575480887.839][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE InitSession {
+   "acceptInsecureCerts": false,
+   "acceptSslCerts": false,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052)",
+      "userDataDir": "/var/folders/lw/0z_61hj17ls1zd8c5z8xlk880000gn/T/.org.chromium.Chromium.c9CfSO"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "goog:chromeOptions": {
+      "debuggerAddress": "localhost:57119"
+   },
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Mac OS X",
+   "rotatable": false,
+   "~~~": "..."
+}
+[1575480887.843][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND SetImplicitWait {
+   "ms": 60000.0,
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178"
+}
+[1575480887.843][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE SetImplicitWait
+[1575480887.846][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND ExecuteScript {
+   "args": [ {
+      "testCaseName": "Test",
+      "testSuiteName": "DemoTest-Selenium"
+   } ],
+   "script": "/* FLOW_MARKER test-case-start */",
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178"
+}
+[1575480887.846][INFO]: Waiting for pending navigations...
+[1575480887.851][INFO]: Done waiting for pending navigations. Status: ok
+[1575480887.854][INFO]: Waiting for pending navigations...
+[1575480887.855][INFO]: Done waiting for pending navigations. Status: ok
+[1575480887.855][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE ExecuteScript
+[1575480887.858][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND Navigate {
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178",
+   "url": "chrome://newtab/"
+}
+[1575480887.858][INFO]: Waiting for pending navigations...
+[1575480887.859][INFO]: Done waiting for pending navigations. Status: ok
+[1575480888.168][INFO]: Waiting for pending navigations...
+[1575480888.959][INFO]: Done waiting for pending navigations. Status: ok
+[1575480888.960][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE Navigate
+[1575480888.962][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND Navigate {
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178",
+   "url": "https://www.google.com/"
+}
+[1575480888.962][INFO]: Waiting for pending navigations...
+[1575480888.965][INFO]: Done waiting for pending navigations. Status: ok
+[1575480889.161][INFO]: Waiting for pending navigations...
+[1575480889.799][INFO]: Done waiting for pending navigations. Status: ok
+[1575480889.799][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE Navigate
+[1575480889.801][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND FindElement {
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178",
+   "using": "name",
+   "value": "q"
+}
+[1575480889.801][INFO]: Waiting for pending navigations...
+[1575480889.802][INFO]: Done waiting for pending navigations. Status: ok
+[1575480889.822][INFO]: Waiting for pending navigations...
+[1575480889.823][INFO]: Done waiting for pending navigations. Status: ok
+[1575480889.823][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE FindElement {
+   "ELEMENT": "0.14742830206888935-1"
+}
+[1575480889.826][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND ClickElement {
+   "id": "0.14742830206888935-1",
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178"
+}
+[1575480889.826][INFO]: Waiting for pending navigations...
+[1575480889.827][INFO]: Done waiting for pending navigations. Status: ok
+[1575480889.913][INFO]: Waiting for pending navigations...
+[1575480889.914][INFO]: Done waiting for pending navigations. Status: ok
+[1575480889.914][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE ClickElement
+[1575480889.916][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND FindElement {
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178",
+   "using": "name",
+   "value": "q"
+}
+[1575480889.916][INFO]: Waiting for pending navigations...
+[1575480889.919][INFO]: Done waiting for pending navigations. Status: ok
+[1575480889.925][INFO]: Waiting for pending navigations...
+[1575480889.927][INFO]: Done waiting for pending navigations. Status: ok
+[1575480889.927][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE FindElement {
+   "ELEMENT": "0.14742830206888935-1"
+}
+[1575480889.931][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND ClearElement {
+   "id": "0.14742830206888935-1",
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178"
+}
+[1575480889.931][INFO]: Waiting for pending navigations...
+[1575480889.932][INFO]: Done waiting for pending navigations. Status: ok
+[1575480889.955][INFO]: Waiting for pending navigations...
+[1575480889.956][INFO]: Done waiting for pending navigations. Status: ok
+[1575480889.956][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE ClearElement
+[1575480889.958][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND FindElement {
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178",
+   "using": "name",
+   "value": "q"
+}
+[1575480889.958][INFO]: Waiting for pending navigations...
+[1575480889.959][INFO]: Done waiting for pending navigations. Status: ok
+[1575480889.965][INFO]: Waiting for pending navigations...
+[1575480889.966][INFO]: Done waiting for pending navigations. Status: ok
+[1575480889.966][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE FindElement {
+   "ELEMENT": "0.14742830206888935-1"
+}
+[1575480889.968][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND TypeElement {
+   "id": "0.14742830206888935-1",
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178",
+   "text": "Selenium Test",
+   "value": [ "S", "e", "l", "e", "n", "i", "u", "m", " ", "T", "e", "s", "t" ]
+}
+[1575480889.968][INFO]: Waiting for pending navigations...
+[1575480889.969][INFO]: Done waiting for pending navigations. Status: ok
+[1575480890.247][INFO]: Waiting for pending navigations...
+[1575480890.252][INFO]: Done waiting for pending navigations. Status: ok
+[1575480890.252][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE TypeElement
+[1575480890.255][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND FindElement {
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178",
+   "using": "name",
+   "value": "q"
+}
+[1575480890.255][INFO]: Waiting for pending navigations...
+[1575480890.256][INFO]: Done waiting for pending navigations. Status: ok
+[1575480890.260][INFO]: Waiting for pending navigations...
+[1575480890.262][INFO]: Done waiting for pending navigations. Status: ok
+[1575480890.262][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE FindElement {
+   "ELEMENT": "0.14742830206888935-1"
+}
+[1575480890.264][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND TypeElement {
+   "id": "0.14742830206888935-1",
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178",
+   "text": "",
+   "value": [ "" ]
+}
+[1575480890.264][INFO]: Waiting for pending navigations...
+[1575480890.265][INFO]: Done waiting for pending navigations. Status: ok
+[1575480890.299][INFO]: Waiting for pending navigations...
+[1575480891.456][INFO]: Done waiting for pending navigations. Status: ok
+[1575480891.456][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE TypeElement
+[1575480891.464][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND ExecuteScript {
+   "args": [ {
+      "message": "",
+      "status": "success"
+   } ],
+   "script": "/* FLOW_MARKER test-case-stop */",
+   "sessionId": "4feac9c88cff95ebb7bce5a778922178"
+}
+[1575480891.464][INFO]: Waiting for pending navigations...
+[1575480891.498][INFO]: Done waiting for pending navigations. Status: ok
+[1575480891.501][INFO]: Waiting for pending navigations...
+[1575480891.502][INFO]: Done waiting for pending navigations. Status: ok
+[1575480891.502][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE ExecuteScript
+[1575480891.506][INFO]: [4feac9c88cff95ebb7bce5a778922178] COMMAND Quit {
+
+}
+[1575480891.566][INFO]: [4feac9c88cff95ebb7bce5a778922178] RESPONSE Quit

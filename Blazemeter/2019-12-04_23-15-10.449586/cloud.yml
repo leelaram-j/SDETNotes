@@ -1,0 +1,65 @@
+---
+execution:
+- blazegrid: true
+  capabilities:
+    browserName: chrome
+  executor: selenium
+  iterations: 1
+  locations:
+    us-central1-a: 1
+  scenario: DemoTest-Selenium
+local-bzt-version: 1.13.9
+modules:
+  cloud:
+    browser-open: start
+    check-interval: 5s
+    default-location: us-central1-a
+    public-report: false
+    request-logging-limit: 10240
+    send-report-email: false
+    timeout: 10s
+  consolidator:
+    percentiles:
+    - 0.0
+    - 50.0
+    - 90.0
+    - 95.0
+    - 99.0
+    - 99.9
+    - 100.0
+reporting:
+- module: final-stats
+- module: console
+scenarios:
+  DemoTest-Selenium:
+    generate-flow-markers: true
+    headless: false
+    requests:
+    - actions:
+      - go(chrome://newtab/)
+      - go(https://www.google.com/)
+      - clickByName(q)
+      - typeByName(q): Selenium Test
+      - keysByName(q): KEY_ENTER
+      label: Test
+    think-time: 0s
+    timeout: 60s
+services:
+- local:
+  - metrics:
+    - cpu
+    - mem
+    - bytes-sent
+    - bytes-recv
+    - disk-read
+    - disk-write
+    - disk-space
+    - engine-loop
+    - conn-all
+  module: monitoring
+settings:
+  default-executor: jmeter
+  env:
+    OBJC_DISABLE_INITIALIZE_FORK_SAFETY: 'YES'
+    TAURUS_ARTIFACTS_DIR: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586
+

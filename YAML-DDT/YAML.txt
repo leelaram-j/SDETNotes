@@ -1,0 +1,16 @@
+YAML:
+
+https://testng.org/doc/documentation-main.html#yaml
+https://en.wikipedia.ord/wiki/YAML
+
+Genearte yaml content (online editors available)
+https://codebeautify.org/xml-to-yaml
+
+
+read/parse from external .yml file using yaml parses(snakeyaml)
+
+yaml vs excel. 
+yaml file changes can be easily tracked with version control
+
+
+for data driven testing, now a days more ppl are starting to use yaml file.

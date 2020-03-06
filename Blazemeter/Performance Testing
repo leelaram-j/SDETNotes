@@ -1,0 +1,26 @@
+Performance Testing:
+
+Non functional testing
+
+load/performance/stress testing
+
+
+performance--try to find the break point
+
+Blazemeter and JMeter
+Load ninja, neo load
+Blazemeter--platform as a service
+
+Blazemter support taurus --that supports Jmeter
+
+f3e073d168f35ed0a0bd6eaf
+
+1240407d4e3ffb1652304ef35c5ad421791ee94d5bd1fddae3f65776a1dfef753901f0ea
+
+$ curl https://a.blazemeter.com/api/v4/user --user 'f3e073d168f35ed0a0bd6eaf:1240407d4e3ffb1652304ef35c5ad421791ee94d5bd1fddae3f65776a1dfef753901f0ea'
+
+
+Performance testing tools:
+blazemeter
+
+for performance monitoring, use New relic apm and appdynamics

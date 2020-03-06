@@ -1,0 +1,42 @@
+{
+ "modules": {
+  "nose": {
+   "ignore-unknown-actions": true
+  }
+ },
+ "execution": [
+  {
+   "executor": "selenium",
+   "scenario": "DemoTest-Selenium",
+   "blazegrid": true,
+   "iterations": 1,
+   "capabilities": {
+    "browserName": "chrome"
+   }
+  }
+ ],
+ "scenarios": {
+  "DemoTest-Selenium": {
+   "generate-flow-markers": true,
+   "headless": false,
+   "timeout": "60s",
+   "think-time": "0s",
+   "requests": [
+    {
+     "label": "Test",
+     "actions": [
+      "go(chrome://newtab/)",
+      "go(https://www.google.com/)",
+      "clickByName(q)",
+      {
+       "typeByName(q)": "Selenium Test"
+      },
+      {
+       "keysByName(q)": "KEY_ENTER"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

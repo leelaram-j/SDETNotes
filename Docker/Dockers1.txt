@@ -123,6 +123,7 @@ docker container ps -a -q  --> lists all contianers
 
 docker images ls
 
+docker exec -it <containerid> bash
 
 
 

@@ -1,0 +1,35 @@
+---
+execution:
+- blazegrid: true
+  capabilities:
+    browserName: chrome
+  executor: selenium
+  iterations: 1
+  scenario: DemoTest-Selenium
+modules:
+  cloud:
+    browser-open: start
+    check-interval: 5s
+    public-report: false
+    request-logging-limit: 10240
+    send-report-email: false
+    timeout: 10s
+    token: '********'
+  modules: null
+  nose:
+    ignore-unknown-actions: true
+scenarios:
+  DemoTest-Selenium:
+    generate-flow-markers: true
+    headless: false
+    requests:
+    - actions:
+      - go(chrome://newtab/)
+      - go(https://www.google.com/)
+      - clickByName(q)
+      - typeByName(q): Selenium Test
+      - keysByName(q): KEY_ENTER
+      label: Test
+    think-time: 0s
+    timeout: 60s
+

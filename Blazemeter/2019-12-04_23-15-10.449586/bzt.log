@@ -1,0 +1,1217 @@
+[2019-12-04 23:15:10,306 INFO root] Taurus CLI Tool v1.13.9
+[2019-12-04 23:15:10,307 DEBUG root] Command-line options: {'log': '/var/folders/lw/0z_61hj17ls1zd8c5z8xlk880000gn/T/bzt_bx3_04uo.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': ['cloud']}
+[2019-12-04 23:15:10,307 DEBUG root] Python: CPython 3.7.5
+[2019-12-04 23:15:10,307 DEBUG root] OS: uname_result(system='Darwin', node='192.168.1.4', release='19.0.0', version='Darwin Kernel Version 19.0.0: Thu Oct 17 16:17:15 PDT 2019; root:xnu-6153.41.3~29/RELEASE_X86_64', machine='x86_64', processor='i386')
+[2019-12-04 23:15:10,308 INFO root] Starting with configs: ['DemoTest-Selenium1.yaml']
+[2019-12-04 23:15:10,308 DEBUG root] Using personal config: /Users/lee/.bzt-rc
+[2019-12-04 23:15:10,309 INFO Engine] Configuring...
+[2019-12-04 23:15:10,380 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml']
+[2019-12-04 23:15:10,380 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml']
+[2019-12-04 23:15:10,382 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml as YAML
+[2019-12-04 23:15:10,416 DEBUG Engine] User configs list: ['/Users/lee/.bzt-rc', 'DemoTest-Selenium1.yaml']
+[2019-12-04 23:15:10,416 DEBUG Engine.Configuration] Configs: ['/Users/lee/.bzt-rc', 'DemoTest-Selenium1.yaml']
+[2019-12-04 23:15:10,418 DEBUG Engine.Configuration] Reading /Users/lee/.bzt-rc as YAML
+[2019-12-04 23:15:10,425 DEBUG Engine.Configuration] Reading DemoTest-Selenium1.yaml as YAML
+[2019-12-04 23:15:10,433 DEBUG Engine.Configuration] Configs: ['/Users/lee/.bzt-rc', 'DemoTest-Selenium1.yaml']
+[2019-12-04 23:15:10,433 DEBUG Engine.Configuration] Reading /Users/lee/.bzt-rc as YAML
+[2019-12-04 23:15:10,440 DEBUG Engine.Configuration] Reading DemoTest-Selenium1.yaml as YAML
+[2019-12-04 23:15:10,449 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.13.9&installID=macos-1094bbe75d4a
+[2019-12-04 23:15:10,449 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.13.9&installID=macos-1094bbe75d4a
+[2019-12-04 23:15:10,449 INFO Engine] Artifacts dir: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586
+[2019-12-04 23:15:10,450 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/effective
+[2019-12-04 23:15:10,453 DEBUG Engine.Configuration] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/effective.yml
+[2019-12-04 23:15:10,479 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2019-12-04 23:15:10,480 DEBUG Engine.Configuration] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/effective.json
+[2019-12-04 23:15:10,482 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/merged.yml
+[2019-12-04 23:15:10,483 DEBUG Engine.Configuration] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/merged.yml
+[2019-12-04 23:15:10,486 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/merged.json
+[2019-12-04 23:15:10,487 DEBUG Engine.Configuration] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/merged.json
+[2019-12-04 23:15:10,488 DEBUG Engine] Add existing artifact (move=False): DemoTest-Selenium1.yaml
+[2019-12-04 23:15:10,488 DEBUG Engine] Copying DemoTest-Selenium1.yaml to /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/DemoTest-Selenium1.yaml
+[2019-12-04 23:15:10,490 DEBUG root] Closing log handler: /var/folders/lw/0z_61hj17ls1zd8c5z8xlk880000gn/T/bzt_bx3_04uo.log
+[2019-12-04 23:15:10,491 DEBUG root] Switched writing logs to /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/bzt.log
+[2019-12-04 23:15:10,492 DEBUG root] Linting config
+[2019-12-04 23:15:10,498 INFO Engine] Preparing...
+[2019-12-04 23:15:10,499 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2019-12-04 23:15:10,499 DEBUG root] Importing module: bzt.modules.aggregator
+[2019-12-04 23:15:10,773 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.13.9&installID=macos-1094bbe75d4a HTTP/1.1" 200 40
+[2019-12-04 23:15:10,775 DEBUG Engine] Taurus updates info: {'latest': '1.13.9', 'needsUpgrade': False}
+[2019-12-04 23:15:10,775 DEBUG Engine] Installation is up-to-date
+[2019-12-04 23:15:10,912 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/aggregator.py'>
+[2019-12-04 23:15:10,913 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2019-12-04 23:15:10,913 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2019-12-04 23:15:10,913 DEBUG root] Importing module: bzt.modules.monitoring
+[2019-12-04 23:15:10,917 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/monitoring.py'>
+[2019-12-04 23:15:10,918 DEBUG Engine] Module config: cloud {'class': 'bzt.modules.blazemeter.CloudProvisioning', 'default-location': 'us-central1-a', 'token': '********', 'timeout': '10s', 'browser-open': 'start', 'check-interval': '5s', 'public-report': False, 'send-report-email': False, 'request-logging-limit': 10240}
+[2019-12-04 23:15:10,918 DEBUG root] Importing module: bzt.modules.blazemeter
+[2019-12-04 23:15:10,946 DEBUG easyprocess] version=0.2.7
+[2019-12-04 23:15:10,957 DEBUG pyvirtualdisplay] version=0.2.4
+[2019-12-04 23:15:10,963 DEBUG root] Loading class: 'CloudProvisioning' from <module 'bzt.modules.blazemeter' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py'>
+[2019-12-04 23:15:10,964 DEBUG Engine] Module config: blazemeter {'class': 'bzt.modules.blazemeter.BlazeMeterUploader'}
+[2019-12-04 23:15:10,964 DEBUG root] Importing module: bzt.modules.blazemeter
+[2019-12-04 23:15:10,964 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/blazemeter.py'>
+[2019-12-04 23:15:10,965 DEBUG Engine.cloud] Installing http client
+[2019-12-04 23:15:10,965 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2019-12-04 23:15:10,965 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/accounts
+[2019-12-04 23:15:10,998 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2019-12-04 23:15:12,122 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/accounts HTTP/1.1" 200 None
+[2019-12-04 23:15:12,124 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 401685,
+            "name": "uniformkilofoxtrot@gmail.com",
+            "thumbnailUrl": null,
+            "salesforceId": null,
+            "totangoId": null,
+            "apiKeyExpiration": 365,
+            "inviteContactEmail": null,
+            "inviteContactName": null,
+            "appUrl": "https://a.blazemeter.com",
+            "jetLagUrl": null,
+            "jetpackUrl": null,
+            "jmeterPluginsUrl": null,
+            "disclaimerMessage": null,
+            "sessionDelayedStart": 180,
+            "migratedToV4": 1575470411,
+            "taurusCloudUrl": null,
+            "jetlagJavaPath": null,
+            "underMigration": null,
+            "runscopeUrl": null,
+            "siteId": null,
+            "plaEnabled": false,
+            "domainName": null,
+            "additionalDomains": null,
+            "calculateTelemetry": null,
+            "teamId": "dab9d7a0-32ba-457f-9f8f-534fe2e30ce2",
+            "blockRunningTests": false,
+            "created": 1575470411,
+            "updated": 1575473636,
+            "owner": {
+                "id": 821578,
+                "email": "uniformkilofoxtrot@gmail.com",
+                "displayName": "Uniform Foxtrot",
+                "firstName": "Uniform",
+                "lastName": "Foxtrot"
+            },
+            "membersCount": 1,
+            "workspacesCount": 1,
+            "isPayingAccount": false
+        }
+    ],
+    "request_id": "5de7f0a7f0c8c"
+}
+[2019-12-04 23:15:12,125 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=401685&enabled=true&limit=100 None
+[2019-12-04 23:15:12,125 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=401685&enabled=true&limit=100
+[2019-12-04 23:15:12,492 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=401685&enabled=true&limit=100 HTTP/1.1" 200 None
+[2019-12-04 23:15:12,493 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 399720,
+            "name": "Default workspace",
+            "userId": 821578,
+            "created": 1575470411,
+            "updated": 1575470411,
+            "enabled": true,
+            "dedicatedIpsEnabled": true,
+            "privateLocationsEnabled": true,
+            "owner": {
+                "id": 821578,
+                "email": "uniformkilofoxtrot@gmail.com",
+                "displayName": "Uniform Foxtrot"
+            },
+            "membersCount": 1,
+            "allowance": {
+                "amount": 10,
+                "type": "credits"
+            },
+            "accountId": 401685
+        }
+    ],
+    "request_id": "5de7f0a855313"
+}
+[2019-12-04 23:15:12,494 DEBUG Engine] Module config: selenium {'class': 'bzt.modules.selenium.SeleniumExecutor'}
+[2019-12-04 23:15:12,495 DEBUG root] Importing module: bzt.modules.selenium
+[2019-12-04 23:15:12,495 DEBUG root] Loading class: 'SeleniumExecutor' from <module 'bzt.modules.selenium' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/selenium.py'>
+[2019-12-04 23:15:12,497 DEBUG Engine.cloud.ProjectFinder] Parsed test link: None
+[2019-12-04 23:15:12,497 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/user None
+[2019-12-04 23:15:12,497 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/user
+[2019-12-04 23:15:12,841 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/user HTTP/1.1" 200 None
+[2019-12-04 23:15:12,842 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 821578,
+        "email": "uniformkilofoxtrot@gmail.com",
+        "passwordUpdateTime": 1575470406,
+        "access": 1575481497,
+        "login": 1575470418,
+        "firstName": "Uniform",
+        "lastName": "Foxtrot",
+        "timezone": 0,
+        "enabled": true,
+        "roles": [
+            "user",
+            "new-billing",
+            "authenticated"
+        ],
+        "maxApiKeyExpiry": 365,
+        "keycloakGoogleRegister": true,
+        "created": 1575470406,
+        "updated": 1575473636,
+        "elev_io_user_hash": "8d1281a2f1864140a5e4173c9ca472b8cf60c19b3291a90292dd64c7ffb6e1f0",
+        "defaultProject": {
+            "accountId": 401685,
+            "accountName": "uniformkilofoxtrot@gmail.com",
+            "workspaceName": "Default workspace",
+            "id": 489957,
+            "name": "Default project",
+            "userId": null,
+            "description": null,
+            "underMigration": null,
+            "created": 1575470411,
+            "updated": 1575470411,
+            "organizationId": null,
+            "workspaceId": 399720
+        },
+        "defaultProjectId": 489957,
+        "displayName": "Uniform Foxtrot",
+        "features": [],
+        "mail": "uniformkilofoxtrot@gmail.com",
+        "name": "Uniform",
+        "preferences": {
+            "id": "5de7c558d26795423139f264",
+            "userId": 821578,
+            "activeOrganizationId": 399720,
+            "activeWorkspaceId": 399720,
+            "activeAccountId": 401685,
+            "aggregateReportFields": [
+                "labelName",
+                "samples",
+                "avgResponseTime",
+                "90line",
+                "95line",
+                "99line",
+                "minResponseTime",
+                "maxResponseTime",
+                "avgBytes",
+                "avgThroughput",
+                "errorsRate"
+            ]
+        }
+    },
+    "request_id": "5de7f0a8aeb11"
+}
+[2019-12-04 23:15:12,842 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2019-12-04 23:15:12,842 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/accounts
+[2019-12-04 23:15:13,199 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/accounts HTTP/1.1" 200 None
+[2019-12-04 23:15:13,200 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 401685,
+            "name": "uniformkilofoxtrot@gmail.com",
+            "thumbnailUrl": null,
+            "salesforceId": null,
+            "totangoId": null,
+            "apiKeyExpiration": 365,
+            "inviteContactEmail": null,
+            "inviteContactName": null,
+            "appUrl": "https://a.blazemeter.com",
+            "jetLagUrl": null,
+            "jetpackUrl": null,
+            "jmeterPluginsUrl": null,
+            "disclaimerMessage": null,
+            "sessionDelayedStart": 180,
+            "migratedToV4": 1575470411,
+            "taurusCloudUrl": null,
+            "jetlagJavaPath": null,
+            "underMigration": null,
+            "runscopeUrl": null,
+            "siteId": null,
+            "plaEnabled": false,
+            "domainName": null,
+            "additionalDomains": null,
+            "calculateTelemetry": null,
+            "teamId": "dab9d7a0-32ba-457f-9f8f-534fe2e30ce2",
+            "blockRunningTests": false,
+            "created": 1575470411,
+            "updated": 1575473636,
+            "owner": {
+                "id": 821578,
+                "email": "uniformkilofoxtrot@gmail.com",
+                "displayName": "Uniform Foxtrot",
+                "firstName": "Uniform",
+                "lastName": "Foxtrot"
+            },
+            "membersCount": 1,
+            "workspacesCount": 1,
+            "isPayingAccount": false
+        }
+    ],
+    "request_id": "5de7f0a90f92e"
+}
+[2019-12-04 23:15:13,201 DEBUG Engine.cloud.ProjectFinder] Using default account: {'id': 401685, 'name': 'uniformkilofoxtrot@gmail.com', 'thumbnailUrl': None, 'salesforceId': None, 'totangoId': None, 'apiKeyExpiration': 365, 'inviteContactEmail': None, 'inviteContactName': None, 'appUrl': 'https://a.blazemeter.com', 'jetLagUrl': None, 'jetpackUrl': None, 'jmeterPluginsUrl': None, 'disclaimerMessage': None, 'sessionDelayedStart': 180, 'migratedToV4': 1575470411, 'taurusCloudUrl': None, 'jetlagJavaPath': None, 'underMigration': None, 'runscopeUrl': None, 'siteId': None, 'plaEnabled': False, 'domainName': None, 'additionalDomains': None, 'calculateTelemetry': None, 'teamId': 'dab9d7a0-32ba-457f-9f8f-534fe2e30ce2', 'blockRunningTests': False, 'created': 1575470411, 'updated': 1575473636, 'owner': {'id': 821578, 'email': 'uniformkilofoxtrot@gmail.com', 'displayName': 'Uniform Foxtrot', 'firstName': 'Uniform', 'lastName': 'Foxtrot'}, 'membersCount': 1, 'workspacesCount': 1, 'isPayingAccount': False}
+[2019-12-04 23:15:13,201 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=401685&enabled=true&limit=100 None
+[2019-12-04 23:15:13,201 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=401685&enabled=true&limit=100
+[2019-12-04 23:15:13,567 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=401685&enabled=true&limit=100 HTTP/1.1" 200 None
+[2019-12-04 23:15:13,569 DEBUG Engine.cloud] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 399720,
+            "name": "Default workspace",
+            "userId": 821578,
+            "created": 1575470411,
+            "updated": 1575470411,
+            "enabled": true,
+            "dedicatedIpsEnabled": true,
+            "privateLocationsEnabled": true,
+            "owner": {
+                "id": 821578,
+                "email": "uniformkilofoxtrot@gmail.com",
+                "displayName": "Uniform Foxtrot"
+            },
+            "membersCount": 1,
+            "allowance": {
+                "amount": 10,
+                "type": "credits"
+            },
+            "accountId": 401685
+        }
+    ],
+    "request_id": "5de7f0a967180"
+}
+[2019-12-04 23:15:13,570 DEBUG Engine.cloud.ProjectFinder] Using first workspace: {'id': 399720, 'name': 'Default workspace', 'userId': 821578, 'created': 1575470411, 'updated': 1575470411, 'enabled': True, 'dedicatedIpsEnabled': True, 'privateLocationsEnabled': True, 'owner': {'id': 821578, 'email': 'uniformkilofoxtrot@gmail.com', 'displayName': 'Uniform Foxtrot'}, 'membersCount': 1, 'allowance': {'amount': 10, 'type': 'credits'}, 'accountId': 401685}
+[2019-12-04 23:15:13,570 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/user None
+[2019-12-04 23:15:13,570 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/user
+[2019-12-04 23:15:13,916 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/user HTTP/1.1" 200 None
+[2019-12-04 23:15:13,917 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 821578,
+        "email": "uniformkilofoxtrot@gmail.com",
+        "passwordUpdateTime": 1575470406,
+        "access": 1575481497,
+        "login": 1575470418,
+        "firstName": "Uniform",
+        "lastName": "Foxtrot",
+        "timezone": 0,
+        "enabled": true,
+        "roles": [
+            "user",
+            "new-billing",
+            "authenticated"
+        ],
+        "maxApiKeyExpiry": 365,
+        "keycloakGoogleRegister": true,
+        "created": 1575470406,
+        "updated": 1575473636,
+        "elev_io_user_hash": "8d1281a2f1864140a5e4173c9ca472b8cf60c19b3291a90292dd64c7ffb6e1f0",
+        "defaultProject": {
+            "accountId": 401685,
+            "accountName": "uniformkilofoxtrot@gmail.com",
+            "workspaceName": "Default workspace",
+            "id": 489957,
+            "name": "Default project",
+            "userId": null,
+            "description": null,
+            "underMigration": null,
+            "created": 1575470411,
+            "updated": 1575470411,
+            "organizationId": null,
+            "workspaceId": 399720
+        },
+        "defaultProjectId": 489957,
+        "displayName": "Uniform Foxtrot",
+        "features": [],
+        "mail": "uniformkilofoxtrot@gmail.com",
+        "name": "Uniform",
+        "preferences": {
+            "id": "5de7c558d26795423139f264",
+            "userId": 821578,
+            "activeOrganizationId": 399720,
+            "activeWorkspaceId": 399720,
+            "activeAccountId": 401685,
+            "aggregateReportFields": [
+                "labelName",
+                "samples",
+                "avgResponseTime",
+                "90line",
+                "95line",
+                "99line",
+                "minResponseTime",
+                "maxResponseTime",
+                "avgBytes",
+                "avgThroughput",
+                "errorsRate"
+            ]
+        }
+    },
+    "request_id": "5de7f0a9c0d54"
+}
+[2019-12-04 23:15:13,917 DEBUG Engine.cloud.ProjectFinder] Looking for default project: 489957
+[2019-12-04 23:15:13,918 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/projects?workspaceId=399720&limit=1000 None
+[2019-12-04 23:15:13,918 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/projects?workspaceId=399720&limit=1000
+[2019-12-04 23:15:14,264 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/projects?workspaceId=399720&limit=1000 HTTP/1.1" 200 None
+[2019-12-04 23:15:14,266 DEBUG Engine.cloud] Response [200]: {
+    "limit": 1000,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 489957,
+            "name": "Default project",
+            "userId": null,
+            "description": null,
+            "created": 1575470411,
+            "updated": 1575470411,
+            "workspaceId": 399720,
+            "testsCount": 0
+        }
+    ],
+    "request_id": "5de7f0aa21b5d"
+}
+[2019-12-04 23:15:14,268 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/multi-tests?projectId=489957&name=Taurus+Cloud+Test None
+[2019-12-04 23:15:14,268 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/multi-tests?projectId=489957&name=Taurus+Cloud+Test
+[2019-12-04 23:15:14,618 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/multi-tests?projectId=489957&name=Taurus+Cloud+Test HTTP/1.1" 200 161
+[2019-12-04 23:15:14,619 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 0,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [],
+    "request_id": "5de7f0aa77e0b"
+}
+[2019-12-04 23:15:14,620 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/tests?projectId=489957&name=Taurus+Cloud+Test None
+[2019-12-04 23:15:14,620 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/tests?projectId=489957&name=Taurus+Cloud+Test
+[2019-12-04 23:15:14,978 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/tests?projectId=489957&name=Taurus+Cloud+Test HTTP/1.1" 200 161
+[2019-12-04 23:15:14,979 DEBUG Engine.cloud] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 0,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [],
+    "request_id": "5de7f0aace77e"
+}
+[2019-12-04 23:15:14,979 DEBUG Engine.cloud.ProjectFinder] Will create standard test
+[2019-12-04 23:15:14,980 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/workspaces/399720 None
+[2019-12-04 23:15:14,980 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces/399720
+[2019-12-04 23:15:15,380 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces/399720 HTTP/1.1" 200 None
+[2019-12-04 23:15:15,625 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 399720,
+        "name": "Default workspace",
+        "userId": 821578,
+        "created": 1575470411,
+        "updated": 1575470411,
+        "enabled": true,
+        "dedicatedIpsEnabled": true,
+        "privateLocationsEnabled": true,
+        "owner": {
+            "id": 821578,
+            "email": "uniformkilofoxtrot@gmail.com",
+            "displayName": "Uniform Foxtrot"
+        },
+        "membersCount": 1,
+        "allowance": {
+            "amount": 10,
+            "type": "credits"
+        },
+        "accountId": 401685,
+        "locations": [
+            {
+                "id": "harbor-5946770be6e960e5e57b23cf",
+                "title": "Asia Pacific (Seoul) - Functional Test",
+                "name": "Asia Pacific (Seoul) - Functional Test",
+                "provider": "Sandbox",
+                "types": [],
+                "limits": {
+                    "threadsPerEngine": 50,
+                    "concurrency": 50,
+                    "engines": 0,
+                    "duration": 20
+                },
+                "capabilities": {
+                    "dedicatedIps": false,
+                    "isPrivileged": true
+                },
+                "sandbox": true,
+                "purposes": {
+                    "load": false,
+                    "functional": true,
+                    "grid": false,
+                    "serviceMock": false
+                }
+            },
+            {
+                "id": "harbor-5946756fe4d6a204e37b23c6",
+                "title": "Australia (Sydney) - Functional Test",
+                "name": "Australia (Sydney) - Functional Test",
+                "provider": "Sandbox",
+                "types": [],
+                "limits": {
+                    "threadsPerEngine": 50,
+                    "concurrency": 50,
+                    "engines": 0,
+                    "duration": 20
+                },
+                "capabilities": {
+                    "dedicatedIps": false,
+                    "isPrivileged": true
+                },
+                "sandbox": true,
+                "purposes": {
+                    "load": false,
+                    "functional": true,
+                    "grid": false,
+                    "serviceMock": false
+                }
+            },
+            {
+                "id": "harbor-59467342e4d6a205e67b23c6",
+                "title": "Asia Pacific (Singapore) - Functional Test",
+                "name": "Asia Pacific (Singapore) - Functional Test",
+                "provider": "Sandbox",
+                "types": [],
+                "limits": {
+                    "threadsPerEngine": 50,
+                    "concurrency": 50,
+                    "engines": 0,
+                    "duration": 20
+                },
+                "capabilities": {
+                    "dedicatedIps": false,
+                    "isPrivileged": true
+                },
+                "sandbox": true,
+                "purposes": {
+                    "load": false,
+                    "functional": true,
+                    "grid": false,
+                    "serviceMock": false
+                }
+            },
+            {
+                "id": "harbor-5946708a65e00138e57b23c6",
+                "title": "EU West (London) - Functional Test",
+                "name": "EU West (London) - Functional Test",
+                "provider": "Sandbox",
+                "types": [],
+                "limits": {
+                    "threadsPerEngine": 50,
+                    "concurrency": 50,
+                    "engines": 0,
+                    "duration": 20
+                },
+                "capabilities": {
+                    "dedicatedIps": false,
+                    "isPrivileged": true
+                },
+                "sandbox": true,
+                "purposes": {
+                    "load": false,
+                    "functional": true,
+                    "grid": false,
+                    "serviceMock": false
+                }
+            },
+            {
+                "id": "harbor-59466f1b67f3bfebe27b23c7",
+                "title": "EU Central (Frankfurt) - Functional Test",
+                "name": "EU Central (Frankfurt) - Functional Test",
+                "provider": "Sandbox",
+                "types": [],
+                "limits": {
+                    "threadsPerEngine": 50,
+                    "concurrency": 50,
+                    "engines": 0,
+                    "duration": 20
+                },
+                "capabilities": {
+                    "dedicatedIps": false,
+                    "isPrivileged": true
+                },
+                "sandbox": true,
+                "purposes": {
+                    "load": false,
+                    "functional": true,
+                    "grid": false,
+                    "serviceMock": false
+                }
+            },
+            {
+                "id": "harbor-59466cb1e4d6a296e37b23c8",
+                "title": "EU West (Ireland) - Functional Test",
+                "name": "EU West (Ireland) - Functional Test",
+                "provider": "Sandbox",
+                "types": [],
+                "limits": {
+                    "threadsPerEngine": 50,
+                    "concurrency": 50,
+                    "engines": 0,
+                    "duration": 20
+                },
+                "capabilities": {
+                    "dedicatedIps": false,
+                    "isPrivileged": true
+                },
+                "sandbox": true,
+                "purposes": {
+                    "load": false,
+                    "functional": true,
+                    "grid": false,
+                    "serviceMock": false
+                }
+            },
+            {
+                "id": "harbor-5946677fe4d6a21adb7b23c8",
+                "title": "Canada (Central) - Functional Test",
+                "name": "Canada (Central) - Functional Test",
+                "provider": "Sandbox",
+                "types": [],
+                "limits": {
+                    "threadsPerEngine": 50,
+                    "concurrency": 50,
+                    "engines": 0,
+                    "duration": 20
+                },
+                "capabilities": {
+                    "dedicatedIps": false,
+                    "isPrivileged": true
+                },
+                "sandbox": true,
+                "purposes": {
+                    "load": false,
+                    "functional": true,
+                    "grid": false,
+                    "serviceMock": false
+                }
+            },
+            {
+                "id": "harbor-594662d6e6e960aedb7b23c7",
+                "title": "Us West (Oregon) - Functional Test",
+                "name": "Us West (Oregon) - Functional Test",
+                "provider": "Sandbox",
+                "types": [],
+                "limits": {
+                    "threadsPerEngine": 50,
+                    "concurrency": 50,
+                    "engines": 0,
+                    "duration": 20
+                },
+                "capabilities": {
+                    "dedicatedIps": false,
+                    "isPrivileged": true
+                },
+                "sandbox": true,
+                "purposes": {
+                    "load": false,
+                    "functional": true,
+                    "grid": false,
+                    "serviceMock": false
+                }
+            },
+            {
+                "id": "harbor-59465fcde4d6a240d97b23c6",
+                "title": "Us West (N. California) - Functional Test",
+                "name": "Us West (N. California) - Functional Test",
+                "provider": "Sandbox",
+                "types": [],
+                "limits": {
+                    "threadsPerEngine": 50,
+                    "concurrency": 50,
+                    "engines": 0,
+                    "duration": 20
+                },
+                "capabilities": {
+                    "dedicatedIps": false,
+                    "isPrivileged": true
+                },
+                "sandbox": true,
+                "purposes": {
+                    "load": false,
+                    "functional": true,
+                    "grid": false,
+                    "serviceMock": false
+                }
+            },
+            {
+                "id": "harbor-59464ffd67f3bf63cb7b23c9",
+                "title": "US East (Ohio) - Functional Test",
+                "name": "US East (Ohio) - Functional Test",
+                "provider": "Sandbox",
+                "types": [],
+                "limits": {
+                    "threadsPerEngine": 50,
+                    "concurrency": 50,
+                    "engines": 0,
+                    "duration": 20
+                },
+                "capabilities": {
+                    "dedicatedIps": false,
+                    "isPrivileged": true
+                },
+                "sandbox": true,
+                "purposes": {
+                    "load": false,
+                    "functional": true,
+                    "grid": false,
+                    "serviceMock": false
+                }
+            },
+            {
+                "id": "harbor-58d3b97ff132adc0347b23c6",
+                "title": "Functional Testing Default Location",
+                "name": "Functional Testing Default Location",
+                "provider": "Sandbox",
+                "types": [],
+                "limits": {
+                    "threadsPerEngine": 50,
+                    "concurrency": 50,
+                    "engines": 0,
+                    "duration": 20
+                },
+                "capabilities": {
+                    "dedicatedIps": false,
+                    "isPrivileged": true
+                },
+                "sandbox": true,
+                "purposes": {
+                    "load": false,
+                    "functional": true,
+                    "grid": false,
+                    "serviceMock": false
+                }
+            },
+            {
+                "id": "harbor-5591335d8588531f5cde3a04",
+                "title": "Sandbox",
+                "name": "Sandbox",
+                "provider": "Sandbox",
+                "types": [],
+                "limits": {
+[2019-12-04 23:15:15,644 DEBUG Engine] Module config: apiritif {'class': 'bzt.modules.apiritif.ApiritifNoseExecutor'}
+[2019-12-04 23:15:15,644 DEBUG root] Importing module: bzt.modules.apiritif
+[2019-12-04 23:15:15,698 DEBUG root] Loading class: 'ApiritifNoseExecutor' from <module 'bzt.modules.apiritif' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/apiritif/__init__.py'>
+[2019-12-04 23:15:15,698 DEBUG Engine.cloud] All resource files are: []
+[2019-12-04 23:15:15,698 DEBUG Engine.cloud] Replace file names in config: [] with []
+[2019-12-04 23:15:15,701 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/cloud
+[2019-12-04 23:15:15,702 DEBUG root] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/cloud.yml
+[2019-12-04 23:15:15,708 DEBUG root] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/cloud.json
+[2019-12-04 23:15:15,709 DEBUG Engine.cloud] Creating new test
+[2019-12-04 23:15:15,709 DEBUG Engine.cloud] Request: POST https://a.blazemeter.com/api/v4/tests {
+ "name": "Taurus Cloud Test",
+ "projectId": 489957,
+ "configuration": {
+  "type": "taurus",
+  "plugins": {
+   "taurus": {
+    "filename": ""
+   }
+  }
+ }
+}
+[2019-12-04 23:15:15,709 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/tests
+[2019-12-04 23:15:16,105 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/tests HTTP/1.1" 201 752
+[2019-12-04 23:15:16,106 DEBUG Engine.cloud] Response [201]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 7495155,
+        "name": "Taurus Cloud Test",
+        "isNewTest": true,
+        "userId": 821578,
+        "created": 1575481515,
+        "updated": 1575481515,
+        "creatorClientId": "Taurus",
+        "overrideExecutions": [],
+        "shouldSendReportEmail": true,
+        "projectId": 489957,
+        "lastUpdatedById": 821578,
+        "configuration": {
+            "type": "taurus",
+            "canControlRampup": false,
+            "targetThreads": 0,
+            "executionType": "taurusCloud",
+            "plugins": {
+                "taurus": {
+                    "filename": ""
+                }
+            }
+        }
+    },
+    "request_id": "5de7f0abe42b7"
+}
+[2019-12-04 23:15:16,108 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/web/elfinder/7495155?cmd=open&target=s1_Lw None
+[2019-12-04 23:15:16,108 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/web/elfinder/7495155?cmd=open&target=s1_Lw
+[2019-12-04 23:15:16,623 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/web/elfinder/7495155?cmd=open&target=s1_Lw HTTP/1.1" 200 None
+[2019-12-04 23:15:16,625 DEBUG Engine.cloud] Response [200]: {"cwd":{"name":"data","size":0,"mime":"directory","read":1,"write":1,"parent_id":"users","hash":"s1_Lw","rootRev":"","options":{"path":"","url":"","tmbUrl":"self","disabled":["mkdir","archive","zipdl","extract","chmod"],"separator":"\/","copyOverwrite":1,"uploadOverwrite":1,"uploadMaxSize":52428800,"uploadMaxConn":-1,"uploadMime":{"firstOrder":"deny","allow":[],"deny":[]},"dispInlineRegex":"^(?:(?:video|audio)|image\/(?!.+\\+xml)|application\/(?:ogg|x-mpegURL|dash\\+xml)|(?:text\/plain|application\/pdf)$)","jpgQuality":100,"archivers":{"create":[],"extract":[],"createext":[]},"uiCmdMap":[],"syncChkAsTs":0,"syncMinMs":30000,"i18nFolderName":0,"tmbCrop":1,"substituteImg":true,"onetimeUrl":false},"volumeid":"s1_","locked":1,"isroot":1,"phash":"","url":null},"options":{"path":"data","url":"","tmbUrl":"self","disabled":["mkdir","archive","zipdl","extract","chmod"],"separator":"\/","copyOverwrite":1,"uploadOverwrite":1,"uploadMaxSize":52428800,"uploadMaxConn":-1,"uploadMime":{"firstOrder":"deny","allow":[],"deny":[]},"dispInlineRegex":"^(?:(?:video|audio)|image\/(?!.+\\+xml)|application\/(?:ogg|x-mpegURL|dash\\+xml)|(?:text\/plain|application\/pdf)$)","jpgQuality":100,"archivers":{"create":[],"extract":[],"createext":[]},"uiCmdMap":[],"syncChkAsTs":0,"syncMinMs":30000,"i18nFolderName":0,"tmbCrop":1,"substituteImg":true,"onetimeUrl":false},"files":[]}
+[2019-12-04 23:15:16,625 DEBUG Engine.cloud] Test files: []
+[2019-12-04 23:15:16,635 DEBUG Engine.cloud] Uploading files into the test: []
+[2019-12-04 23:15:16,635 DEBUG Engine.cloud] Request: POST https://a.blazemeter.com/api/v4/tests/7495155/files b'--===============8815758792981700850==\r\nContent-Disposition: file; name="script"; filename="taurus.yml"\r\nContent-Type: application/octet-stream\r\n\r\n---\nexecution:\n- blazegrid: true\n  capabilities:\n    browserName: chrome\n  executor: selenium\n  iterations: 1\n  locations:\n    us-central1-a: 1\n  scenario: DemoTest-Selenium\nlocal-bzt-version: 1.13.9\nmodules:\n  cloud:\n    browser-open: start\n    check-interval: 5s\n    default-location: us-central1-a\n    public-report: false\n    request-logging-limit: 10240\n    send-report-email: false\n    timeout: 10s\n  consolidator:\n    percentiles:\n    - 0.0\n    - 50.0\n    - 90.0\n    - 95.0\n    - 99.0\n    - 99.9\n    - 100.0\nreporting:\n- module: final-stats\n- module: console\nscenarios:\n  DemoTest-Selenium:\n    generate-flow-markers: true\n    headless: false\n    requests:\n    - actions:\n      - go(chrome://newtab/)\n      - go(https://www.google.com/)\n      - clickByName(q)\n      - typeByName(q): Selenium Test\n      - keysByName(q): KEY_ENTER\n      label: Test\n    think-time: 0s\n    timeout: 60s\nservices:\n- local:\n  - metrics:\n    - cpu\n    - mem\n    - bytes-sent\n    - bytes-recv\n    - disk-read\n    - disk-write\n    - disk-space\n    - engine-loop\n    - conn-all\n  module: monitoring\nsettings:\n  default-executor: jmeter\n  env:\n    OBJC_DISABLE_INITIALIZE_FORK_SAFETY: \'YES\'\n    TAURUS_ARTIFACTS_DIR: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586\n\r\n--===============8815758792981700850==--\r\n'
+[2019-12-04 23:15:16,635 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/tests/7495155/files
+[2019-12-04 23:15:17,275 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/tests/7495155/files HTTP/1.1" 201 754
+[2019-12-04 23:15:17,276 DEBUG Engine.cloud] Response [201]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 7495155,
+        "isNewTest": true,
+        "name": "Taurus Cloud Test",
+        "userId": 821578,
+        "creatorClientId": "Taurus",
+        "overrideExecutions": [],
+        "shouldSendReportEmail": true,
+        "dependencies": [],
+        "created": 1575481515,
+        "updated": 1575481517,
+        "configuration": {
+            "type": "taurus",
+            "canControlRampup": false,
+            "targetThreads": 0,
+            "executionType": "taurusCloud",
+            "filename": "taurus.yml",
+            "plugins": {
+                "taurus": {
+                    "filename": ""
+                }
+            }
+        }
+    },
+    "request_id": "5de7f0acd11c0"
+}
+[2019-12-04 23:15:17,276 DEBUG Engine.cloud] Request: PATCH https://a.blazemeter.com/api/v4/tests/7495155 {
+ "configuration": {
+  "executionType": null
+ }
+}
+[2019-12-04 23:15:17,276 DEBUG HTTPClient] Making HTTP request PATCH https://a.blazemeter.com/api/v4/tests/7495155
+[2019-12-04 23:15:17,812 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/tests/7495155 HTTP/1.1" 200 None
+[2019-12-04 23:15:17,813 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 7495155,
+        "isNewTest": true,
+        "name": "Taurus Cloud Test",
+        "userId": 821578,
+        "creatorClientId": "Taurus",
+        "overrideExecutions": [],
+        "shouldSendReportEmail": true,
+        "dependencies": [],
+        "created": 1575481515,
+        "updated": 1575481517,
+        "projectId": 489957,
+        "lastUpdatedById": 821578,
+        "configuration": {
+            "type": "taurus",
+            "canControlRampup": false,
+            "targetThreads": 0,
+            "executionType": "taurusCloud",
+            "filename": "taurus.yml",
+            "plugins": {
+                "taurus": {
+                    "filename": ""
+                }
+            }
+        }
+    },
+    "request_id": "5de7f0ad7932f",
+    "test": {
+        "id": 7495155,
+        "isNewTest": true,
+        "name": "Taurus Cloud Test",
+        "userId": 821578,
+        "creatorClientId": "Taurus",
+        "overrideExecutions": [],
+        "shouldSendReportEmail": true,
+        "dependencies": [],
+        "created": 1575481515,
+        "updated": 1575481517,
+        "projectId": 489957,
+        "lastUpdatedById": 821578,
+        "configuration": {
+            "type": "taurus",
+            "canControlRampup": false,
+            "targetThreads": 0,
+            "executionType": "taurusCloud",
+            "filename": "taurus.yml",
+            "plugins": {
+                "taurus": {
+                    "filename": ""
+                }
+            }
+        }
+    }
+}
+[2019-12-04 23:15:17,814 DEBUG Engine.cloud] Request: PATCH https://a.blazemeter.com/api/v4/tests/7495155 {
+ "shouldSendReportEmail": false
+}
+[2019-12-04 23:15:17,814 DEBUG HTTPClient] Making HTTP request PATCH https://a.blazemeter.com/api/v4/tests/7495155
+[2019-12-04 23:15:18,254 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/tests/7495155 HTTP/1.1" 200 None
+[2019-12-04 23:15:18,255 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 7495155,
+        "isNewTest": true,
+        "name": "Taurus Cloud Test",
+        "userId": 821578,
+        "creatorClientId": "Taurus",
+        "overrideExecutions": [],
+        "shouldSendReportEmail": false,
+        "dependencies": [],
+        "created": 1575481515,
+        "updated": 1575481518,
+        "projectId": 489957,
+        "lastUpdatedById": 821578,
+        "configuration": {
+            "type": "taurus",
+            "canControlRampup": false,
+            "targetThreads": 0,
+            "executionType": "taurusCloud",
+            "filename": "taurus.yml",
+            "plugins": {
+                "taurus": {
+                    "filename": ""
+                }
+            }
+        }
+    },
+    "request_id": "5de7f0ae0891a",
+    "test": {
+        "id": 7495155,
+        "isNewTest": true,
+        "name": "Taurus Cloud Test",
+        "userId": 821578,
+        "creatorClientId": "Taurus",
+        "overrideExecutions": [],
+        "shouldSendReportEmail": false,
+        "dependencies": [],
+        "created": 1575481515,
+        "updated": 1575481518,
+        "projectId": 489957,
+        "lastUpdatedById": 821578,
+        "configuration": {
+            "type": "taurus",
+            "canControlRampup": false,
+            "targetThreads": 0,
+            "executionType": "taurusCloud",
+            "filename": "taurus.yml",
+            "plugins": {
+                "taurus": {
+                    "filename": ""
+                }
+            }
+        }
+    }
+}
+[2019-12-04 23:15:18,256 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2019-12-04 23:15:18,256 DEBUG root] Importing module: bzt.modules.reporting
+[2019-12-04 23:15:18,259 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/reporting.py'>
+[2019-12-04 23:15:18,259 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter'}
+[2019-12-04 23:15:18,260 DEBUG root] Importing module: bzt.modules.console
+[2019-12-04 23:15:18,260 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/console.py'>
+[2019-12-04 23:15:18,271 DEBUG Engine.Configuration] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/effective.yml
+[2019-12-04 23:15:18,294 DEBUG Engine.Configuration] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/effective.json
+[2019-12-04 23:15:18,295 INFO Engine] Starting...
+[2019-12-04 23:15:18,295 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x111a64cd0>
+[2019-12-04 23:15:18,295 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10d6d1050>
+[2019-12-04 23:15:18,296 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x110833a10>
+[2019-12-04 23:15:18,296 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x111b41350>
+[2019-12-04 23:15:18,296 INFO Engine.console] Waiting for results...
+[2019-12-04 23:15:18,296 DEBUG Engine] Startup <bzt.modules.blazemeter.CloudProvisioning object at 0x10e5a6990>
+[2019-12-04 23:15:18,296 INFO Engine.cloud.ProjectFinder.CloudTaurusTest] Initiating cloud test with https://a.blazemeter.com ...
+[2019-12-04 23:15:18,296 DEBUG Engine.cloud] Request: POST https://a.blazemeter.com/api/v4/tests/7495155/start None
+[2019-12-04 23:15:18,296 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/tests/7495155/start
+[2019-12-04 23:15:23,157 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/tests/7495155/start HTTP/1.1" 202 3238
+[2019-12-04 23:15:23,158 DEBUG Engine.cloud] Response [202]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 23017148,
+        "name": "Taurus Cloud Test",
+        "userId": 821578,
+        "publicToken": null,
+        "ended": null,
+        "lastUpdate": null,
+        "delayedStartReady": false,
+        "runnerUserId": 821578,
+        "charges": [],
+        "terminateWorkersExecuted": false,
+        "usage": null,
+        "maxUsers": null,
+        "type": null,
+        "passed": null,
+        "canControlRampup": null,
+        "targetThreads": null,
+        "parallelTestsInWorkspace": 1,
+        "parallelTestsInAccount": 1,
+        "isSandbox": null,
+        "isPrivateData": false,
+        "executionMode": null,
+        "creatorClientId": "Taurus",
+        "executorClientId": "Taurus",
+        "importedAt": null,
+        "secondsPerLabelDoc": 60,
+        "taurusRemoteControlProperties": null,
+        "labelsCollectionSuffix": "_17_12",
+        "locations": [
+            "us-central1-a"
+        ],
+        "scenariosMapping": [
+            {
+                "id": "5e87f5d8b3c16abd12fc15db655104f8a6c5f43acb5707dc38ff3abbd5cd4113",
+                "name": "DemoTest-Selenium",
+                "test": "Taurus Cloud Test",
+                "isEndUserExperience": false
+            }
+        ],
+        "isDebugRun": false,
+        "executions": [
+            {
+                "holdFor": "1200s",
+                "iterations": 1,
+                "locations": {
+                    "us-central1-a": 1
+                },
+                "locationsWeighted": true,
+                "executor": "selenium",
+                "capabilities": {
+                    "browserName": "chrome"
+                },
+                "scenario": "DemoTest-Selenium"
+            }
+        ],
+        "concurrency": 0,
+        "useV4Pipeline": true,
+        "terminatedAt": null,
+        "shutdownAt": null,
+        "jupyterToken": null,
+        "jupyterHeartbeat": null,
+        "jupyterHost": null,
+        "jupyterPort": null,
+        "jupyterNotebook": null,
+        "v4IndexerCollection": "{\"execution\":[1],\"execution:1\":[\"r-v4-5de7f0b2e019d\"],\"session:1\":[\"r-v4-5de7f0b2e019d\"],\"location:1\":[\"us-central1-a\"]}",
+        "buildId": null,
+        "isSelenium": false,
+        "isExternal": null,
+        "rpsCompatible": false,
+        "remoteControlCompatible": false,
+        "hasMonitoringData": null,
+        "shouldSendReportEmail": false,
+        "hasDaggerData": false,
+        "kinesisStream": "prod-blue_v4pipeline_input",
+        "useJetlag": true,
+        "properties": null,
+        "jetpackLabels": [
+            {
+                "id": "b5c7aed7cd2a308523e7d2847b7815909e864b2fd9c4ea88b00d35adb2ecdfd7",
+                "name": "ALL"
+            }
+        ],
+        "dependencies": null,
+        "env": "https://a.blazemeter.com",
+        "created": 1575481522,
+        "updated": 1575481523,
+        "note": null,
+        "testCollectionId": null,
+        "testId": 7495155,
+        "projectId": 489957,
+        "scheduleHistoryRecordId": null,
+        "jupyterShipId": null,
+        "sessionsId": [
+            "r-v4-5de7f0b2e019d"
+        ],
+        "functionalSummary": null,
+        "gridSummary": null
+    },
+    "request_id": "5de7f0ae7d2c2"
+}
+[2019-12-04 23:15:23,159 INFO Engine.cloud] Started cloud test: https://a.blazemeter.com/app/#/masters/23017148
+[2019-12-04 23:15:23,688 DEBUG Engine.Configuration] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/effective.yml
+[2019-12-04 23:15:23,835 DEBUG Engine.Configuration] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/effective.json
+[2019-12-04 23:15:23,838 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-12-04 23:15:24,230 INFO Engine.cloud] Cloud test status: BOOT_STARTING
+[2019-12-04 23:15:24,856 INFO Engine.console] Waiting for finish...
+[2019-12-04 23:16:44,524 INFO Engine.cloud] Cloud test status: INIT_SCRIPT
+[2019-12-04 23:16:59,569 INFO Engine.cloud] Cloud test status: TAURUS_ENGINE_READY
+[2019-12-04 23:18:59,935 INFO Engine.cloud] Cloud test status: TERMINATING
+[2019-12-04 23:18:59,942 INFO Engine.cloud] Test was stopped in the cloud: TERMINATING
+[2019-12-04 23:19:01,574 WARNING Engine] Please wait for graceful shutdown...
+[2019-12-04 23:19:01,581 DEBUG root] Leveled up log file verbosity
+[2019-12-04 23:19:01,581 INFO Engine] Shutting down...
+[2019-12-04 23:19:01,587 DEBUG Engine] Current stop reason: None
+[2019-12-04 23:19:01,588 DEBUG Engine.console] Restoring logging streams, [<StreamHandler (INFO)>]/{<StreamHandler (INFO)>: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>}
+[2019-12-04 23:19:01,589 DEBUG Engine.Configuration] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/effective.yml
+[2019-12-04 23:19:01,621 DEBUG Engine.Configuration] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/effective.json
+[2019-12-04 23:19:01,622 INFO Engine] Post-processing...
+[2019-12-04 23:19:01,623 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/masters/23017148/full None
+[2019-12-04 23:19:01,623 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/masters/23017148/full
+[2019-12-04 23:19:01,989 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/masters/23017148/full HTTP/1.1" 200 None
+[2019-12-04 23:19:01,990 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 23017148,
+        "name": "Taurus Cloud Test",
+        "userId": 821578,
+        "delayedStartReady": false,
+        "runnerUserId": 821578,
+        "charges": [],
+        "created": 1575481522,
+        "updated": 1575481523,
+        "parallelTestsInWorkspace": 1,
+        "parallelTestsInAccount": 1,
+        "isPrivateData": false,
+        "creatorClientId": "Taurus",
+        "executorClientId": "Taurus",
+        "secondsPerLabelDoc": 60,
+        "labelsCollectionSuffix": "_17_12",
+        "isDebugRun": false,
+        "locations": [
+            "us-central1-a"
+        ],
+        "scenariosMapping": [
+            {
+                "id": "5e87f5d8b3c16abd12fc15db655104f8a6c5f43acb5707dc38ff3abbd5cd4113",
+                "name": "DemoTest-Selenium",
+                "test": "Taurus Cloud Test",
+                "isEndUserExperience": false
+            }
+        ],
+        "executions": [
+            {
+                "holdFor": "1200s",
+                "iterations": 1,
+                "locations": {
+                    "us-central1-a": 1
+                },
+                "locationsWeighted": true,
+                "executor": "selenium",
+                "capabilities": {
+                    "browserName": "chrome"
+                },
+                "scenario": "DemoTest-Selenium"
+            }
+        ],
+        "useV4Pipeline": true,
+        "isSelenium": false,
+        "hasMonitoringData": true,
+        "rpsCompatible": false,
+        "remoteControlCompatible": false,
+        "hasDaggerData": false,
+        "testId": 7495155,
+        "projectId": 489957,
+        "sessionsId": [
+            "r-v4-5de7f0b2e019d"
+        ],
+        "thumbnailUrl": null,
+        "hasErrorsPerInterval": true,
+        "collectionId": null,
+        "events": [],
+        "shouldUseDaggerReport": true,
+        "runnerUser": {
+            "id": 821578,
+            "displayName": "Uniform Foxtrot",
+            "email": "uniformkilofoxtrot@gmail.com"
+        },
+        "hasThresholds": false,
+        "hasFailedThresholds": false,
+        "jetpackLabels": [
+            {
+                "id": "b5c7aed7cd2a308523e7d2847b7815909e864b2fd9c4ea88b00d35adb2ecdfd7",
+                "name": "ALL"
+            }
+        ]
+    },
+    "request_id": "5de7f18dce10a"
+}
+[2019-12-04 23:19:01,990 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/data/labels?master_id=23017148 None
+[2019-12-04 23:19:01,990 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/data/labels?master_id=23017148
+[2019-12-04 23:19:02,357 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/data/labels?master_id=23017148 HTTP/1.1" 200 200
+[2019-12-04 23:19:02,358 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": "ALL",
+            "name": "ALL",
+            "sessions": []
+        }
+    ],
+    "request_id": "5de7f18e366a9"
+}
+[2019-12-04 23:19:02,359 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/data/kpis?interval=1&from=0&master_ids%5B%5D=23017148&kpis%5B%5D=t&kpis%5B%5D=lt&kpis%5B%5D=by&kpis%5B%5D=n&kpis%5B%5D=ec&kpis%5B%5D=ts&kpis%5B%5D=na&labels%5B%5D=ALL None
+[2019-12-04 23:19:02,359 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/data/kpis?interval=1&from=0&master_ids%5B%5D=23017148&kpis%5B%5D=t&kpis%5B%5D=lt&kpis%5B%5D=by&kpis%5B%5D=n&kpis%5B%5D=ec&kpis%5B%5D=ts&kpis%5B%5D=na&labels%5B%5D=ALL
+[2019-12-04 23:19:02,725 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/data/kpis?interval=1&from=0&master_ids%5B%5D=23017148&kpis%5B%5D=t&kpis%5B%5D=lt&kpis%5B%5D=by&kpis%5B%5D=n&kpis%5B%5D=ec&kpis%5B%5D=ts&kpis%5B%5D=na&labels%5B%5D=ALL HTTP/1.1" 200 None
+[2019-12-04 23:19:02,726 DEBUG Engine.cloud] Response [200]: {
+    "apiVersion": 4,
+    "cached": true,
+    "dataSource": "dagger",
+    "error": null,
+    "requestId": "5de7f18e8eb0d",
+    "result": [
+        {
+            "labelId": "b5c7aed7cd2a308523e7d2847b7815909e864b2fd9c4ea88b00d35adb2ecdfd7",
+            "labelName": "ALL",
+            "label": "ALL",
+            "kpis": []
+        }
+    ],
+    "api_version": 4,
+    "request_id": "5de7f18e8eb0d"
+}
+[2019-12-04 23:19:02,727 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/masters/23017148/reports/aggregatereport/data None
+[2019-12-04 23:19:02,727 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/masters/23017148/reports/aggregatereport/data
+[2019-12-04 23:19:03,223 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/masters/23017148/reports/aggregatereport/data HTTP/1.1" 200 200
+[2019-12-04 23:19:03,224 DEBUG Engine.cloud] Response [200]: {
+    "apiVersion": 4,
+    "cached": false,
+    "dataSource": "dagger",
+    "error": null,
+    "requestId": "5de7f18ee7d87",
+    "result": [],
+    "api_version": 4,
+    "request_id": "5de7f18ee7d87"
+}
+[2019-12-04 23:19:03,224 DEBUG Engine.consolidator] Consolidator buffer[0]: dict_keys([])
+[2019-12-04 23:19:03,225 INFO Engine.final-stats] Test duration: 0:03:43
+[2019-12-04 23:19:03,225 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2019-12-04 23:19:03,227 DEBUG Engine.Configuration] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/effective.yml
+[2019-12-04 23:19:03,252 DEBUG Engine.Configuration] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/effective.json
+[2019-12-04 23:19:03,253 INFO root] Artifacts dir: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586
+[2019-12-04 23:19:03,253 INFO root] Done performing with code: 0
+[2019-12-04 23:19:03,254 DEBUG root] Closing log handler: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-15-10.449586/bzt.log

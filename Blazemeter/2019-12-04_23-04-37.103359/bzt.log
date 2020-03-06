@@ -1,0 +1,153 @@
+[2019-12-04 23:04:37,008 INFO root] Taurus CLI Tool v1.13.9
+[2019-12-04 23:04:37,008 DEBUG root] Command-line options: {'log': '/var/folders/lw/0z_61hj17ls1zd8c5z8xlk880000gn/T/bzt_8_fn988w.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2019-12-04 23:04:37,009 DEBUG root] Python: CPython 3.7.5
+[2019-12-04 23:04:37,009 DEBUG root] OS: uname_result(system='Darwin', node='192.168.1.4', release='19.0.0', version='Darwin Kernel Version 19.0.0: Thu Oct 17 16:17:15 PDT 2019; root:xnu-6153.41.3~29/RELEASE_X86_64', machine='x86_64', processor='i386')
+[2019-12-04 23:04:37,010 INFO root] Starting with configs: ['DemoTest-Selenium.yaml']
+[2019-12-04 23:04:37,011 DEBUG root] Using personal config: /Users/lee/.bzt-rc
+[2019-12-04 23:04:37,011 INFO Engine] Configuring...
+[2019-12-04 23:04:37,038 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml']
+[2019-12-04 23:04:37,038 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml']
+[2019-12-04 23:04:37,040 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/resources/10-base-config.yml as YAML
+[2019-12-04 23:04:37,079 DEBUG Engine] User configs list: ['/Users/lee/.bzt-rc', 'DemoTest-Selenium.yaml']
+[2019-12-04 23:04:37,079 DEBUG Engine.Configuration] Configs: ['/Users/lee/.bzt-rc', 'DemoTest-Selenium.yaml']
+[2019-12-04 23:04:37,081 DEBUG Engine.Configuration] Reading /Users/lee/.bzt-rc as YAML
+[2019-12-04 23:04:37,087 DEBUG Engine.Configuration] Reading DemoTest-Selenium.yaml as YAML
+[2019-12-04 23:04:37,092 DEBUG Engine.Configuration] Configs: ['/Users/lee/.bzt-rc', 'DemoTest-Selenium.yaml']
+[2019-12-04 23:04:37,093 DEBUG Engine.Configuration] Reading /Users/lee/.bzt-rc as YAML
+[2019-12-04 23:04:37,098 DEBUG Engine.Configuration] Reading DemoTest-Selenium.yaml as YAML
+[2019-12-04 23:04:37,103 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.13.9&installID=macos-1094bbe75d4a
+[2019-12-04 23:04:37,103 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.13.9&installID=macos-1094bbe75d4a
+[2019-12-04 23:04:37,103 INFO Engine] Artifacts dir: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359
+[2019-12-04 23:04:37,104 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/effective
+[2019-12-04 23:04:37,107 DEBUG Engine.Configuration] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/effective.yml
+[2019-12-04 23:04:37,133 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2019-12-04 23:04:37,135 DEBUG Engine.Configuration] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/effective.json
+[2019-12-04 23:04:37,136 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/merged.yml
+[2019-12-04 23:04:37,137 DEBUG Engine.Configuration] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/merged.yml
+[2019-12-04 23:04:37,140 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/merged.json
+[2019-12-04 23:04:37,140 DEBUG Engine.Configuration] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/merged.json
+[2019-12-04 23:04:37,141 DEBUG Engine] Add existing artifact (move=False): DemoTest-Selenium.yaml
+[2019-12-04 23:04:37,141 DEBUG Engine] Copying DemoTest-Selenium.yaml to /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/DemoTest-Selenium.yaml
+[2019-12-04 23:04:37,143 DEBUG root] Closing log handler: /var/folders/lw/0z_61hj17ls1zd8c5z8xlk880000gn/T/bzt_8_fn988w.log
+[2019-12-04 23:04:37,148 DEBUG root] Switched writing logs to /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/bzt.log
+[2019-12-04 23:04:37,149 DEBUG root] Linting config
+[2019-12-04 23:04:37,156 INFO Engine] Preparing...
+[2019-12-04 23:04:37,157 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2019-12-04 23:04:37,157 DEBUG root] Importing module: bzt.modules.aggregator
+[2019-12-04 23:04:37,426 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.13.9&installID=macos-1094bbe75d4a HTTP/1.1" 200 40
+[2019-12-04 23:04:37,426 DEBUG Engine] Taurus updates info: {'latest': '1.13.9', 'needsUpgrade': False}
+[2019-12-04 23:04:37,427 DEBUG Engine] Installation is up-to-date
+[2019-12-04 23:04:37,523 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/aggregator.py'>
+[2019-12-04 23:04:37,523 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2019-12-04 23:04:37,523 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2019-12-04 23:04:37,524 DEBUG root] Importing module: bzt.modules.monitoring
+[2019-12-04 23:04:37,529 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/monitoring.py'>
+[2019-12-04 23:04:37,529 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local'}
+[2019-12-04 23:04:37,529 DEBUG root] Importing module: bzt.modules.provisioning
+[2019-12-04 23:04:37,529 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/provisioning.py'>
+[2019-12-04 23:04:37,529 DEBUG Engine] Module config: selenium {'class': 'bzt.modules.selenium.SeleniumExecutor'}
+[2019-12-04 23:04:37,530 DEBUG root] Importing module: bzt.modules.selenium
+[2019-12-04 23:04:37,536 DEBUG root] Loading class: 'SeleniumExecutor' from <module 'bzt.modules.selenium' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/selenium.py'>
+[2019-12-04 23:04:37,536 DEBUG Engine.local] Preparing executor: selenium/4552579408
+[2019-12-04 23:04:37,536 INFO Engine.selenium] Installing ChromeDriver...
+[2019-12-04 23:04:37,537 INFO Engine.selenium.ChromeDriver] Will install ChromeDriver into /Users/lee/.bzt/selenium-taurus/tools/chromedriver/2.43
+[2019-12-04 23:04:37,537 INFO Engine.selenium.ChromeDriver] Downloading: https://chromedriver.storage.googleapis.com/2.43/chromedriver_mac64.zip
+[2019-12-04 23:04:37,545 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
+[2019-12-04 23:04:37,616 DEBUG urllib3.connectionpool] https://chromedriver.storage.googleapis.com:443 "GET /2.43/chromedriver_mac64.zip HTTP/1.1" 200 5987780
+[2019-12-04 23:04:38,815 INFO Engine.selenium.ChromeDriver] Unzipping /var/folders/lw/0z_61hj17ls1zd8c5z8xlk880000gn/T/tmpko6chy4x.zip to /Users/lee/.bzt/selenium-taurus/tools/chromedriver/2.43
+[2019-12-04 23:04:38,815 DEBUG root] Extracting /var/folders/lw/0z_61hj17ls1zd8c5z8xlk880000gn/T/tmpko6chy4x.zip to /Users/lee/.bzt/selenium-taurus/tools/chromedriver/2.43
+[2019-12-04 23:04:38,829 DEBUG root] Writing /Users/lee/.bzt/selenium-taurus/tools/chromedriver/2.43/chromedriver
+[2019-12-04 23:04:38,992 INFO Engine.selenium] Installing GeckoDriver...
+[2019-12-04 23:04:38,993 INFO Engine.selenium.GeckoDriver] Will install GeckoDriver into /Users/lee/.bzt/selenium-taurus/tools/geckodriver/0.23.0
+[2019-12-04 23:04:38,993 INFO Engine.selenium.GeckoDriver] Downloading: https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-macos.tar.gz
+[2019-12-04 23:04:39,002 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): github.com:443
+[2019-12-04 23:04:39,454 DEBUG urllib3.connectionpool] https://github.com:443 "GET /mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-macos.tar.gz HTTP/1.1" 302 None
+[2019-12-04 23:04:39,466 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): github-production-release-asset-2e65be.s3.amazonaws.com:443
+[2019-12-04 23:04:40,527 DEBUG urllib3.connectionpool] https://github-production-release-asset-2e65be.s3.amazonaws.com:443 "GET /25354393/7091b880-c7e0-11e8-8dba-be388bcec193?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20191204%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191204T173439Z&X-Amz-Expires=300&X-Amz-Signature=4be35c5c1491b0bd73468a3fe68ab36d93f05b5b043637ea944c929b7ee52a17&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dgeckodriver-v0.23.0-macos.tar.gz&response-content-type=application%2Foctet-stream HTTP/1.1" 200 2413898
+[2019-12-04 23:04:42,246 INFO Engine.selenium.GeckoDriver] Untaring /var/folders/lw/0z_61hj17ls1zd8c5z8xlk880000gn/T/tmpyg273ha7.zip to /Users/lee/.bzt/selenium-taurus/tools/geckodriver/0.23.0
+[2019-12-04 23:04:42,322 DEBUG Engine] Module config: apiritif {'class': 'bzt.modules.apiritif.ApiritifNoseExecutor'}
+[2019-12-04 23:04:42,323 DEBUG root] Importing module: bzt.modules.apiritif
+[2019-12-04 23:04:42,451 DEBUG root] Loading class: 'ApiritifNoseExecutor' from <module 'bzt.modules.apiritif' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/apiritif/__init__.py'>
+[2019-12-04 23:04:42,451 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/apiritif.out
+[2019-12-04 23:04:42,451 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/apiritif.err
+[2019-12-04 23:04:42,452 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/test_requests.py
+[2019-12-04 23:04:42,452 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/webdriver.log
+[2019-12-04 23:04:42,452 DEBUG Engine.ApiritifScriptGenerator] Generating setUp test method
+[2019-12-04 23:04:42,461 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/ApiritifNoseExecutor.dat
+[2019-12-04 23:04:42,461 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2019-12-04 23:04:42,462 DEBUG root] Importing module: bzt.modules.reporting
+[2019-12-04 23:04:42,538 DEBUG easyprocess] version=0.2.7
+[2019-12-04 23:04:42,570 DEBUG pyvirtualdisplay] version=0.2.4
+[2019-12-04 23:04:42,576 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/reporting.py'>
+[2019-12-04 23:04:42,577 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter'}
+[2019-12-04 23:04:42,577 DEBUG root] Importing module: bzt.modules.console
+[2019-12-04 23:04:42,577 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/Cellar/bzt/1.13.9/libexec/lib/python3.7/site-packages/bzt/modules/console.py'>
+[2019-12-04 23:04:42,588 DEBUG Engine.Configuration] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/effective.yml
+[2019-12-04 23:04:42,613 DEBUG Engine.Configuration] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/effective.json
+[2019-12-04 23:04:42,614 INFO Engine] Starting...
+[2019-12-04 23:04:42,615 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x10f584f50>
+[2019-12-04 23:04:42,615 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10e34ec10>
+[2019-12-04 23:04:42,615 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x10ba1aa90>
+[2019-12-04 23:04:42,615 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x110247090>
+[2019-12-04 23:04:42,615 INFO Engine.console] Waiting for results...
+[2019-12-04 23:04:42,615 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x10f58f6d0>
+[2019-12-04 23:04:42,615 DEBUG Engine.local] Delay setup for selenium/DemoTest-Selenium: 0(start-at) + 0(delay) = 0
+[2019-12-04 23:04:42,617 DEBUG Engine.Configuration] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/effective.yml
+[2019-12-04 23:04:42,640 DEBUG Engine.Configuration] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/effective.json
+[2019-12-04 23:04:42,641 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-12-04 23:04:42,641 DEBUG root] Leveled up log file verbosity
+[2019-12-04 23:04:42,641 DEBUG Engine] New artifact filename: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/apiritif.
+[2019-12-04 23:04:42,642 DEBUG root] Executing shell: ['/usr/local/Cellar/bzt/1.13.9/libexec/bin/python3.7', '-m', 'apiritif.loadgen', '--result-file-template', '/Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/apiritif.%s.csv', '--iterations', '1', '/Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/test_requests.py'] at /Users/lee/Documents/SDET_Master/Blazemeter
+[2019-12-04 23:04:42,656 DEBUG Engine.local] Starting execution: selenium/DemoTest-Selenium, rest of available slots: 9223372036854775806
+[2019-12-04 23:04:42,657 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2019-12-04 23:04:42,889 INFO Engine.console] Waiting for finish...
+[2019-12-04 23:04:52,722 WARNING Engine] Please wait for graceful shutdown...
+[2019-12-04 23:04:52,728 DEBUG root] Leveled up log file verbosity
+[2019-12-04 23:04:52,728 INFO Engine] Shutting down...
+[2019-12-04 23:04:52,734 DEBUG Engine] Current stop reason: None
+[2019-12-04 23:04:52,735 DEBUG Engine.local] Shutdown selenium/DemoTest-Selenium
+[2019-12-04 23:04:52,735 DEBUG Engine.selenium] Selenium tests ran for 10.094014167785645 seconds
+[2019-12-04 23:04:52,735 DEBUG Engine.console] Restoring logging streams, [<StreamHandler (INFO)>]/{<StreamHandler (INFO)>: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>}
+[2019-12-04 23:04:52,739 DEBUG Engine.Configuration] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/effective.yml
+[2019-12-04 23:04:52,764 DEBUG Engine.Configuration] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/effective.json
+[2019-12-04 23:04:52,765 INFO Engine] Post-processing...
+[2019-12-04 23:04:52,765 DEBUG Engine.local] Post-process selenium/DemoTest-Selenium
+[2019-12-04 23:04:52,765 DEBUG Engine.apiritif.ApiritifLoadReader.JTLReader] Buffer len: 1; Known errors count: 0
+[2019-12-04 23:04:52,765 DEBUG Engine.apiritif.ApiritifLoadReader.JTLReader] Aggregating: 1575480887, 1 in buffer
+[2019-12-04 23:04:52,770 DEBUG Engine.apiritif.ApiritifLoadReader.JTLReader] Buffer len: 0; Known errors count: 0
+[2019-12-04 23:04:52,771 DEBUG Engine.apiritif.ApiritifLoadReader] Consolidator buffer[1]: dict_keys([1575480887])
+[2019-12-04 23:04:52,771 DEBUG Engine.apiritif.ApiritifLoadReader] Merging into 1575480887
+[2019-12-04 23:04:52,771 DEBUG Engine.apiritif.ApiritifLoadReader] Bypassing consolidation because of single result
+[2019-12-04 23:04:52,772 DEBUG Engine.apiritif.ApiritifLoadReader.JTLReader] Buffer len: 0; Known errors count: 0
+[2019-12-04 23:04:52,772 DEBUG Engine.apiritif.ApiritifLoadReader] Consolidator buffer[0]: dict_keys([])
+[2019-12-04 23:04:52,772 DEBUG Engine.consolidator] Consolidator buffer[1]: dict_keys([1575480887])
+[2019-12-04 23:04:52,773 DEBUG Engine.consolidator] Merging into 1575480887
+[2019-12-04 23:04:52,773 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2019-12-04 23:04:52,846 DEBUG Engine.consolidator] Processed datapoint: 1575480887/ConsolidatingAggregator@4533316624
+[2019-12-04 23:04:52,846 INFO Engine.final-stats] Test duration: 0:00:10
+[2019-12-04 23:04:52,847 INFO Engine.final-stats] Samples count: 1, 0.00% failures
+[2019-12-04 23:04:52,847 INFO Engine.final-stats] Average times: total 3.601, latency 0.000, connect 0.000
+[2019-12-04 23:04:52,849 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B           3.6 (0x(B
+(0x(B          50.0 (0x(B           3.6 (0x(B
+(0x(B          90.0 (0x(B           3.6 (0x(B
+(0x(B          95.0 (0x(B           3.6 (0x(B
+(0x(B          99.0 (0x(B           3.6 (0x(B
+(0x(B          99.9 (0x(B           3.6 (0x(B
+(0x(B         100.0 (0x(B           3.6 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2019-12-04 23:04:52,853 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqwqqqqqqqqwqqqqqqqqqwqqqqqqqqwqqqqqqqk(B
+(0x(B label (0x(B status (0x(B    succ (0x(B avg_rt (0x(B error (0x(B
+(0tqqqqqqqnqqqqqqqqnqqqqqqqqqnqqqqqqqqnqqqqqqqu(B
+(0x(B Test  (0x(B   OK   (0x(B 100.00% (0x(B  3.601 (0x(B       (0x(B
+(0mqqqqqqqvqqqqqqqqvqqqqqqqqqvqqqqqqqqvqqqqqqqj(B
+[2019-12-04 23:04:52,854 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2019-12-04 23:04:52,856 DEBUG Engine.Configuration] Dumping YAML config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/effective.yml
+[2019-12-04 23:04:52,880 DEBUG Engine.Configuration] Dumping JSON config into /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/effective.json
+[2019-12-04 23:04:52,881 INFO root] Artifacts dir: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359
+[2019-12-04 23:04:52,881 INFO root] Done performing with code: 0
+[2019-12-04 23:04:52,881 DEBUG root] Closing log handler: /Users/lee/Documents/SDET_Master/Blazemeter/2019-12-04_23-04-37.103359/bzt.log

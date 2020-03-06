@@ -1,0 +1,44 @@
+Project 1: Test Pyramid Implementation for Web Services
+Duration: Jan 2019 – Till Date
+Environment: RestAssured, Selenium, Java, Jenkins, Git, Github, Mysql, Postman, TestNG, TDD, Agile, Maven, Data Driven Framework, Log4j, Extent Reports.
+1) Working Closely with Dev team in understanding the Services and creating Unit test cases.
+2) Creating and executing Backward Compatibility cases, Integration and Regression and Prod Sanity suits, which are used in creating CD/CI pipelines.
+3) Designing testcases for E2E flow, integrating UI and Backend test cases.
+4) Creating and monitoring Jenkins pipeline for Web services automated deployment and testing.
+
+Project 2: Bankbazaar India and International
+Duration: Apr 2018 - Till Date
+Environment: Selenium, Java, Jenkins, Git, Github, Mysql, Postman, TestNG,TDD, Agile, Maven, Data Driven Framework,Selenium Grid,Docker, Log4j,Extent Reports.
+1) Conducted Functional testing, Regression Testing using selenium with Data-driven framework.
+2) Write and maintain reusable test cases in java selenium based page object model framework for various products and feature testing in Regression and Integration phase.
+3) Design, develop and maintain a automated suite to keep check of the SEO attributes and requirements across all the pages available in the product website's sitemap. Thus keeping a check on the health of SEO rank.
+4) Design, develop and maintain automated test suite for everyday and requirement based testing of the campaign management system at Bankbazaar. With alerts based on status of the service to whatsapp and email.
+5) Responsible for everyday activities in maintaining the automated test suite relevant to the changes in product website.
+6) Analyse and identify bugs from automated test cases in the integration and regression phase of release for responsible products.
+7) Responsible for monthly analysis on the quality of bugs found via automation and update strategy of automated testing to better identification of bugs.
+8) Conducted Parallel testing by implementing Selenium Grid using Docker.
+9) Validating the data that is stored in MySql databases.
+
+Project 3: Partner Product Sanity - Health Check Automation Report
+Designation: Configuration Analyst
+Duration: Sep 2017 – Mar 2018
+Environment: Selenium, Java, Jenkins, Git, Github, TestNG, TDD, Agile, Maven, Data Driven Framework, Log4j, Extent Reports.
+1) Creating and maintaining Partner Sanity Suites.
+2) Analysing the failures and Coordinating with the Production Support team for fixing it.
+3) Monitor the Production suite every morning and filing the bug against Delivery Team if there is any defect found in the customer flow.
+
+Title: Verde IT Finance Risk and Treasury
+Client: Lloyds Banking Group, UK
+Environment: JCL, COBOL, Mainframe
+Tools: HP Quality Centre, IBM Personal Communications, Teradata Client 13.0, IBM Clear Quest
+Description:
+‘CDS' Credit Decisioning System. It generates the Credit score of every customer in the bank. It is one of the important applications of a Bank having 15+ upstreams and downstreams. Apart from this, I handled 2 more Commercial applications OKYBC and BBCRAS.
+Roles & Responsibilities:
+1) Preparation of Test Cases.
+2) Involved in peer reviews with team members
+3) Execution of Test Cases.
+4) Integration Testing, Ad-hoc Testing and Regression Testing.
+5) Defect Tracking and Reporting in Quality Centre.
+6) Update Traceability Matrix regularly.
+7) Preparing DSR/WSR and sending it to stake holders.
+8) Coordinating with Environment Team in code deployment.
