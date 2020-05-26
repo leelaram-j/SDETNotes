@@ -91,3 +91,15 @@ om.readValue();
 
 this is used to convert json to java object.
 
+Below is a simple example of converting a JSON String to a Java object using the ObjectMapper class:
+
+String json = "{ \"color\" : \"Black\", \"type\" : \"BMW\" }";
+Car car = objectMapper.readValue(json, Car.class);  
+The readValue() function also accepts other forms of input like a file containing JSON string:
+
+
+Car car = objectMapper.readValue(new File("src/test/resources/json_car.json"), Car.class);
+or a URL:
+
+Car car = 
+  objectMapper.readValue(new URL("file:src/test/resources/json_car.json"), Car.class);

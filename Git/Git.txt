@@ -6,8 +6,6 @@ git clone repo-name
 
 git remote -v --> this will return the push and pull url's
 
-git stash
-
 git remote add origin repo-name
 
 git pull origin master
@@ -24,11 +22,9 @@ git commit -m "messge"
 
 git push origin master
 
-
 git checkout -b branch_name --> creates new branch and checkout that
 
 git checkout branchname --> switch to exisitng branch
-
 
 git branch --> to list all branches
 
@@ -44,6 +40,7 @@ git reset --hard origin/master
 adding a new branch from local to central repo
 
 git push -u origin JIRA_456
+
 
 HEAD:
 

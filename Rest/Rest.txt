@@ -81,4 +81,4 @@ cookie
 4xx client errors, rest errors
 5xx server errors
 reponse
-content-tyoe
+content-type
