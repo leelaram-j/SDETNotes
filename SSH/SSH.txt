@@ -1,0 +1,40 @@
+ssh basics
+
+
+ssh user@ipaddress
+
+default port 22.
+
+1) for aws
+
+
+ssh -i pemfile ec2-user@ip
+
+scp -i pemfile filename ec2-user@ip
+
+2) in aws machine u need to enable passsword authentication for ssh, by default it is disabled.
+
+nano /etc/ssh/sshd_config
+
+set value for password authentication...
+PasswordAuthentication yes
+
+then do a reload of sshd service
+
+service sshd reload
+
+3) also u need to setup password for ec2-user
+
+login as root, 
+passwd ec2-user
+then give passwords
+
+4) to generte public and private key
+
+ssh-keygen
+
+after this id_rsa and id_rsa.pub, first one private , second one public 
+
+5) under .ssh folder there is authorized keys folder....u need to add the other system's ssh key in order for connection to work smoothly.
+
+ssh-copy-id ec2-user@ip

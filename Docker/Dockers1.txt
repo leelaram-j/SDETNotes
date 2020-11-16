@@ -126,5 +126,25 @@ docker images ls
 docker exec -it <containerid> bash
 
 
+for tomcat:
 
+docker run -d -p 8455:8455 tomcat-container <tomcatImageID>
+docker run -d -p 8455:8455 tomcat-container tomcat:latest
+
+
+Login to container
+
+docker exec -it tomcat-container <containerID>
+
+moving file from host to container
+
+sudo docker cp webapp.war tomcat-container:/usr/local/tomcat/webapps/webapp.war
+
+building docker image from docker file, remember that image to be in lowercase and make sure no other files are there in that folder...aws no issue, but local beware...as it might take long time and huge file size might be created....
+
+sudo docker build -t customtomcatimage .
+
+now to create a container with the custom image
+
+docker run -d -p 8455:8080 --name customtomcat customtomcatimage
 
