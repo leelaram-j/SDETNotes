@@ -1,0 +1,31 @@
+---
+- hosts: webservers
+  tasks:
+  # - name: Copy docker file to qa server
+  #   copy:
+  #     src: DockerFile
+  #     dest: /home/leelaram/dockerfiles/ or just put . for home directory.
+          
+  - name: Stop the running container
+    command: docker stop customtomcat
+    ignore_errors: True
+    
+  - name: Remove docker container
+    command: docker rm customtomcat
+    ignore_errors: True
+    
+  - name: Remove docker image
+    command: docker rmi customtomcatimage
+    ignore_errors: True
+    
+  - name: Move war file to DockerFiles location
+    command: sudo mv -f webapp.war /home/leelaram/dockerfiles
+    
+  - name: cd to dockerfiles folder
+    command: cd /home/leelaram/dockerfiles
+    
+  - name: Build tomcat Image
+    command: sudo docker build -t customtomcatimage .
+    
+  - name: Start container for customTomcatImage
+    command: sudo docker run -d -p 8455:8080 --name customtomcat customtomcatimage

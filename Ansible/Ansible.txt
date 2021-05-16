@@ -1,0 +1,26 @@
+Ansible
+
+simple IT automation engine that automates all the commands that you can provide on a terminal.
+
+YAML file -> Ansible playbooks that allows you to describe your autoamtion jobs in plain english
+
+it works by connecting to your nodes and pushing out small programs called ansible modules to them.
+
+Ansible then executes these modules over ssh and removes them once finished.
+
+it is used when we need to instal a bunch of softwares on several computers...it is a devops tool.
+
+
+ansible management node: main server from where ansible instructions are sent.
+
+host inventory: this will contain the list of all ip address..
+
+playbook: this will contian the instructions that are needed to be run on other servers. 
+
+you need to give sudo access to ec2-user in order to perform actions
+
+echo "ec2-user ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+
+
+ansible-playbook -i hosts playbook.yml
