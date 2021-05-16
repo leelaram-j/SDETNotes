@@ -1,0 +1,75 @@
+springboot running projects from terminal.
+
+starting spring boot server:
+
+mvn spring-boot:run
+
+this will start server. based on active profiles it will start.
+
+provide profile name in terminal.
+
+first enable setting in pom.xml
+
+<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<activatedProperties>dev</activatedProperties>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<activatedProperties>prod</activatedProperties>
+			</properties>
+		</profile>
+	</profiles>
+
+
+then change in application.properties as well..
+
+spring.profiles.active=@activatedProperties@
+
+then use the below command to run.
+
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
+
+to run unit testcases just use
+
+mvn clean test
+
+
+running integration testcases
+
+we need a plugin called failsafe
+
+<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.22.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+add this to pom.xml
+
+
+then using the below u can run the integration testcase. please remember to start the server in dev profile and then run the integration testcases.
+
+
+mvn failsafe:integration-test
+
+
+
+mvn integration-test
+ will run both unit and integration testcases.            
+
+
+
